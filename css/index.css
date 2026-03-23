@@ -1140,21 +1140,21 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - WORKING FIX ===== */
+  /* ===== HERO SECTION - FINAL PERFECT ===== */
   .hero-slider {
-    min-height: 68vh !important;
+    min-height: 70vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 68vh !important;
+    min-height: 70vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 65px 0 40px !important;
+    padding: 60px 0 25px !important;
     text-align: center !important;
   }
   
-  /* WEBSITE • APP • SOFTWARE - Force Show */
+  /* WEBSITE • APP • SOFTWARE - Top Margin */
   .slider-content h6 {
     display: block !important;
     visibility: visible !important;
@@ -1162,21 +1162,21 @@ body {
     font-size: 0.8rem !important;
     font-weight: 700 !important;
     letter-spacing: 5px !important;
-    margin-top: 15px !important;
-    margin-bottom: 18px !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
   }
   
-  /* Where Logic Meets Creativity - Heading Bada */
+  /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 3rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 20px !important;
     color: white !important;
   }
   
-  /* We build powerful... - Description Bada */
+  /* We build powerful... - Heading Bada */
   .slider-content .lead {
     font-size: 1rem !important;
     margin-bottom: 25px !important;
@@ -1184,11 +1184,12 @@ body {
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* Buttons - Side by Side, Center, Neeche */
+  /* Buttons - Neeche (Dots ke paas) */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 20px !important;
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
     gap: 18px !important;
   }
   .hero-buttons .btn-gradient,
@@ -1203,7 +1204,7 @@ body {
   /* Arrow Buttons */
   .slider-arrow {
     top: auto !important;
-    bottom: 60px !important;
+    bottom: 50px !important;
     transform: translateY(0) !important;
     width: 40px !important;
     height: 40px !important;
@@ -1220,7 +1221,7 @@ body {
   
   /* 3 Dots */
   .slider-dots {
-    bottom: 20px !important;
+    bottom: 12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
@@ -1289,15 +1290,15 @@ body {
   
   /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 62vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 62vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 55px 0 35px !important;
+    padding: 50px 0 20px !important;
     text-align: center !important;
   }
   
@@ -1305,21 +1306,21 @@ body {
   .slider-content h6 {
     font-size: 0.7rem !important;
     letter-spacing: 4px !important;
-    margin-top: 10px !important;
-    margin-bottom: 15px !important;
+    margin-top: 25px !important;
+    margin-bottom: 18px !important;
   }
   
   /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 2.6rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 18px !important;
   }
   
   /* We build powerful... */
   .slider-content .lead {
     font-size: 0.9rem !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 22px !important;
     line-height: 1.4 !important;
   }
   
@@ -1327,7 +1328,8 @@ body {
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 15px !important;
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
     gap: 15px !important;
   }
   .hero-buttons .btn-gradient,
@@ -1344,7 +1346,7 @@ body {
     width: 34px !important;
     height: 34px !important;
     font-size: 0.85rem !important;
-    bottom: 52px !important;
+    bottom: 45px !important;
   }
   .slider-arrow.prev {
     left: 12px !important;
@@ -1355,7 +1357,7 @@ body {
   
   /* 3 Dots */
   .slider-dots {
-    bottom: 18px !important;
+    bottom: 10px !important;
   }
   .slider-dots .dot {
     width: 7px !important;
