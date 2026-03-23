@@ -1140,7 +1140,7 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - FINAL PERFECT ===== */
+  /* ===== HERO SECTION ===== */
   .hero-slider {
     min-height: 70vh !important;
     height: auto !important;
@@ -1154,7 +1154,6 @@ body {
     text-align: center !important;
   }
   
-  /* WEBSITE • APP • SOFTWARE - Top Margin */
   .slider-content h6 {
     display: block !important;
     visibility: visible !important;
@@ -1166,9 +1165,9 @@ body {
     margin-bottom: 20px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
+    white-space: nowrap !important;
   }
   
-  /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 3rem !important;
     line-height: 1.2 !important;
@@ -1176,7 +1175,6 @@ body {
     color: white !important;
   }
   
-  /* We build powerful... - Heading Bada */
   .slider-content .lead {
     font-size: 1rem !important;
     margin-bottom: 25px !important;
@@ -1184,7 +1182,6 @@ body {
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* Buttons - Neeche (Dots ke paas) */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
@@ -1201,7 +1198,6 @@ body {
     max-width: 140px !important;
   }
   
-  /* Arrow Buttons */
   .slider-arrow {
     top: auto !important;
     bottom: 50px !important;
@@ -1219,7 +1215,6 @@ body {
     left: auto !important;
   }
   
-  /* 3 Dots */
   .slider-dots {
     bottom: 12px !important;
     left: 50% !important;
@@ -1230,7 +1225,6 @@ body {
     height: 9px !important;
   }
   
-  /* Footer Social Icons - Center */
   .footer .col-lg-4,
   .footer .col-lg-2,
   .footer .col-lg-3 {
@@ -1288,7 +1282,7 @@ body {
     height: 30px !important;
   }
   
-  /* ===== HERO SECTION - SMALL PHONE ===== */
+  /* ===== HERO SECTION - SMALL PHONE (FIXED) ===== */
   .hero-slider {
     min-height: 65vh !important;
     height: auto !important;
@@ -1302,12 +1296,14 @@ body {
     text-align: center !important;
   }
   
-  /* WEBSITE • APP • SOFTWARE */
+  /* WEBSITE • APP • SOFTWARE - Ek Line Mein */
   .slider-content h6 {
-    font-size: 2rem !important;
-    letter-spacing: 4px !important;
-    margin-top: 30px !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 3px !important;
+    white-space: nowrap !important;
+    margin-top: 25px !important;
     margin-bottom: 18px !important;
+    color: #20c997 !important;
   }
   
   /* Where Logic Meets Creativity */
@@ -1317,10 +1313,10 @@ body {
     margin-bottom: 18px !important;
   }
   
-  /* We build powerful... */
+  /* We build powerful... - Font Size Kam */
   .slider-content .lead {
-    font-size: 1.8rem !important;
-    margin-bottom: 17px !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 20px !important;
     line-height: 1.4 !important;
   }
   
