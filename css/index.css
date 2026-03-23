@@ -1140,79 +1140,87 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - FINAL ===== */
+  /* ===== HERO SECTION - FINAL WORKING ===== */
   .hero-slider {
-    min-height: 55vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 55vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 50px 0 20px !important;
+    padding: 70px 0 35px !important;
     text-align: center !important;
   }
+  
+  /* WEBSITE • APP • SOFTWARE - Show & Center */
+  .slider-content h6 {
+    font-size: 0.75rem !important;
+    letter-spacing: 3px !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    display: block !important;
+    color: rgb(22, 221, 161) !important;
+  }
+  
+  /* Where Logic Meets Creativity - Heading Bada */
   .slider-content h1 {
     font-size: 2.8rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 12px !important;
-  }
-  .slider-content h6 {
-    font-size: 0.7rem !important;
-    letter-spacing: 3px !important;
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-  }
-  .slider-content .lead {
-    font-size: 0.9rem !important;
     margin-bottom: 15px !important;
-    line-height: 1.4 !important;
   }
   
-  /* Buttons - Side by Side, Center */
+  /* We build powerful... - Description Bada */
+  .slider-content .lead {
+    font-size: 0.95rem !important;
+    margin-bottom: 20px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Buttons - Side by Side, Center, Neeche */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 10px !important;
-    gap: 12px !important;
+    margin-top: 15px !important;
+    gap: 15px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 7px 16px !important;
-    font-size: 11px !important;
-    min-width: 110px !important;
+    padding: 8px 20px !important;
+    font-size: 12px !important;
+    min-width: 120px !important;
     width: auto !important;
-    max-width: 120px !important;
+    max-width: 130px !important;
   }
   
-  /* Arrow Buttons - Left & Right Corner (Buttons Ke Side) */
+  /* Arrow Buttons - Get Started & View Work ke Side */
   .slider-arrow {
     top: auto !important;
-    bottom: 48px !important;
+    bottom: 55px !important;
     transform: translateY(0) !important;
-    width: 34px !important;
-    height: 34px !important;
-    font-size: 0.85rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 0.9rem !important;
   }
   .slider-arrow.prev {
-    left: 10px !important;
+    left: 12px !important;
     right: auto !important;
   }
   .slider-arrow.next {
-    right: 10px !important;
+    right: 12px !important;
     left: auto !important;
   }
   
-  /* 3 Dots - Bottom */
+  /* 3 Dots - Thoda Upar */
   .slider-dots {
-    bottom: 12px !important;
+    bottom: 18px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
   .slider-dots .dot {
-    width: 8px !important;
-    height: 8px !important;
+    width: 9px !important;
+    height: 9px !important;
   }
   
   /* Footer Social Icons - Center */
@@ -1275,73 +1283,77 @@ body {
   
   /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 50vh !important;
+    min-height: 60vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 50vh !important;
+    min-height: 60vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 45px 0 15px !important;
+    padding: 60px 0 30px !important;
     text-align: center !important;
   }
+  
+  /* WEBSITE • APP • SOFTWARE */
+  .slider-content h6 {
+    font-size: 0.65rem !important;
+    letter-spacing: 2px !important;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 2.4rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
   }
-  .slider-content h6 {
-    font-size: 0.6rem !important;
-    letter-spacing: 2px !important;
-    margin-top: 6px !important;
-    margin-bottom: 6px !important;
-  }
+  
+  /* We build powerful... */
   .slider-content .lead {
     font-size: 0.85rem !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 18px !important;
     line-height: 1.4 !important;
   }
   
-  /* Buttons - Side by Side, Center */
+  /* Buttons */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 8px !important;
-    gap: 10px !important;
+    margin-top: 12px !important;
+    gap: 12px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 6px 14px !important;
-    font-size: 10px !important;
-    min-width: 100px !important;
+    padding: 7px 16px !important;
+    font-size: 11px !important;
+    min-width: 105px !important;
     width: auto !important;
-    max-width: 110px !important;
+    max-width: 115px !important;
   }
   
-  /* Arrow Buttons - Left & Right Corner (Buttons Ke Side) */
+  /* Arrow Buttons */
   .slider-arrow {
-    width: 30px !important;
-    height: 30px !important;
-    font-size: 0.75rem !important;
-    bottom: 42px !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.8rem !important;
+    bottom: 48px !important;
   }
   .slider-arrow.prev {
-    left: 8px !important;
+    left: 10px !important;
   }
   .slider-arrow.next {
-    right: 8px !important;
+    right: 10px !important;
   }
   
-  /* 3 Dots - Bottom */
+  /* 3 Dots */
   .slider-dots {
-    bottom: 10px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    bottom: 15px !important;
   }
   .slider-dots .dot {
-    width: 6px !important;
-    height: 6px !important;
+    width: 7px !important;
+    height: 7px !important;
   }
   
   .section-title h2 {
