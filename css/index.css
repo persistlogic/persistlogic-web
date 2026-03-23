@@ -1140,17 +1140,17 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION ===== */
+  /* ===== HERO SECTION - TABLET ===== */
   .hero-slider {
-    min-height: 70vh !important;
+    min-height: 72vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 70vh !important;
+    min-height: 72vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 60px 0 25px !important;
+    padding: 70px 0 30px !important;
     text-align: center !important;
   }
   
@@ -1158,52 +1158,53 @@ body {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    font-size: 0.8rem !important;
+    font-size: 0.85rem !important;
     font-weight: 700 !important;
     letter-spacing: 5px !important;
-    margin-top: 30px !important;
-    margin-bottom: 20px !important;
+    margin-top: 35px !important;
+    margin-bottom: 22px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
     white-space: nowrap !important;
   }
   
   .slider-content h1 {
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 22px !important;
     color: white !important;
   }
   
   .slider-content .lead {
     font-size: 1rem !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 28px !important;
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
+  /* Buttons - Side by Side, Bigger Font */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 15px !important;
-    margin-bottom: 10px !important;
-    gap: 18px !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    gap: 20px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 10px 24px !important;
-    font-size: 13px !important;
-    min-width: 130px !important;
+    padding: 12px 28px !important;
+    font-size: 14px !important;
+    min-width: 140px !important;
     width: auto !important;
-    max-width: 140px !important;
+    max-width: 150px !important;
   }
   
   .slider-arrow {
     top: auto !important;
-    bottom: 50px !important;
+    bottom: 55px !important;
     transform: translateY(0) !important;
-    width: 40px !important;
-    height: 40px !important;
+    width: 42px !important;
+    height: 42px !important;
     font-size: 1rem !important;
   }
   .slider-arrow.prev {
@@ -1216,7 +1217,7 @@ body {
   }
   
   .slider-dots {
-    bottom: 12px !important;
+    bottom: 15px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
@@ -1282,67 +1283,67 @@ body {
     height: 30px !important;
   }
   
-  /* ===== HERO SECTION - SMALL PHONE (FIXED) ===== */
+  /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 65vh !important;
+    min-height: 68vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 65vh !important;
+    min-height: 68vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 50px 0 20px !important;
+    padding: 60px 0 25px !important;
     text-align: center !important;
   }
   
   /* WEBSITE • APP • SOFTWARE - Ek Line Mein */
   .slider-content h6 {
-    font-size: 0.7rem !important;
+    font-size: 0.75rem !important;
     letter-spacing: 3px !important;
     white-space: nowrap !important;
-    margin-top: 25px !important;
-    margin-bottom: 18px !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
     color: #20c997 !important;
   }
   
   /* Where Logic Meets Creativity */
   .slider-content h1 {
-    font-size: 2.6rem !important;
+    font-size: 2.8rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 20px !important;
   }
   
-  /* We build powerful... - Font Size Kam */
+  /* We build powerful... */
   .slider-content .lead {
-    font-size: 0.85rem !important;
-    margin-bottom: 20px !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 22px !important;
     line-height: 1.4 !important;
   }
   
-  /* Buttons */
+  /* Buttons - Side by Side, Bigger Font */
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 12px !important;
-    margin-bottom: 5px !important;
-    gap: 15px !important;
+    margin-top: 18px !important;
+    margin-bottom: 12px !important;
+    gap: 16px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 8px 18px !important;
-    font-size: 11px !important;
-    min-width: 110px !important;
+    padding: 10px 22px !important;
+    font-size: 12px !important;
+    min-width: 120px !important;
     width: auto !important;
-    max-width: 120px !important;
+    max-width: 130px !important;
   }
   
   /* Arrow Buttons */
   .slider-arrow {
-    width: 34px !important;
-    height: 34px !important;
-    font-size: 0.85rem !important;
-    bottom: 45px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.9rem !important;
+    bottom: 48px !important;
   }
   .slider-arrow.prev {
     left: 12px !important;
@@ -1353,11 +1354,11 @@ body {
   
   /* 3 Dots */
   .slider-dots {
-    bottom: 10px !important;
+    bottom: 12px !important;
   }
   .slider-dots .dot {
-    width: 7px !important;
-    height: 7px !important;
+    width: 8px !important;
+    height: 8px !important;
   }
   
   .section-title h2 {
