@@ -800,9 +800,9 @@ body {
   
   /* ===== BANNER SECTION - SMALL PHONE (Same as Service Page) ===== */
   .page-header {
-    min-height: 22vh !important;
-    padding-top: 0 !important;
-    padding-bottom: 25px !important;
+    min-height: 28vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
     margin-top: 0 !important;
   }
   
