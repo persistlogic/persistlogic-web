@@ -121,7 +121,7 @@ body {
   font-weight: 600;
 }
 
-/* Get a Quote Button - Navbar */
+/* Get a Quote Button */
 .btn-gradient {
   background: linear-gradient(135deg, #20c997, #0a2540);
   color: white;
@@ -144,60 +144,24 @@ body {
   color: white;
 }
 
-/* ===== HERO BUTTONS - BOTH SAME SIZE (FIXED) ===== */
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.hero-buttons .btn-gradient,
-.hero-buttons .btn-outline-light {
-  padding: 14px 32px !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
+.btn-outline-light {
   border-radius: 50px !important;
-  text-align: center !important;
-  min-width: 160px !important;
-  transition: all 0.3s ease !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 8px !important;
-  cursor: pointer !important;
-  text-decoration: none !important;
-  line-height: 1 !important;
-}
-
-/* Get Started Button */
-.hero-buttons .btn-gradient {
-  background: linear-gradient(135deg, #20c997, #0a2540);
-  color: white;
+  padding: 0.8rem 2rem !important;
   border: none;
-  box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3);
+  background: white;
+  color: #0a0f1e;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.hero-buttons .btn-gradient:hover {
+.btn-outline-light:hover {
+  background: #20c997;
+  color: white !important;
   transform: translateY(-3px);
   box-shadow: 0 20px 30px -10px #20c997;
-  color: white;
-}
-
-/* View Work Button - Same Size as Get Started */
-.hero-buttons .btn-outline-light {
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-}
-
-.hero-buttons .btn-outline-light:hover {
-  background: white;
-  color: #20c997;
-  border-color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 20px 30px -10px rgba(255, 255, 255, 0.5);
 }
 
 /* ===== HERO SLIDER SECTION ===== */
@@ -306,6 +270,12 @@ body {
 .dot.active {
   background: #20c997;
   transform: scale(1.2);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* ===== 3D ANIMATIONS ===== */
@@ -1104,6 +1074,9 @@ body {
   .navbar-logo {
     height: 40px !important;
   }
+  .hero-buttons {
+    justify-content: center;
+  }
   .slider-content h1 {
     font-size: 3rem;
   }
@@ -1117,12 +1090,28 @@ body {
   .logo-wrapper {
     gap: 40px;
   }
-  /* Hero buttons responsive */
-  .hero-buttons .btn-gradient,
-  .hero-buttons .btn-outline-light {
-    padding: 12px 28px !important;
-    font-size: 15px !important;
-    min-width: 150px !important;
+  
+  /* Hero Section Fix */
+  .hero-slider {
+    min-height: 85vh !important;
+    height: auto !important;
+  }
+  .slider-container {
+    min-height: 85vh !important;
+    height: auto !important;
+  }
+  .slider-content {
+    padding: 120px 0 80px !important;
+  }
+  .slider-content h1 {
+    font-size: 2.5rem !important;
+  }
+  .slider-content h6 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .hero-buttons {
+    margin-top: 20px !important;
   }
 }
 
@@ -1170,6 +1159,16 @@ body {
   .logo-item img {
     height: 40px;
   }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    width: 100%;
+    text-align: center;
+  }
   .about-section .row {
     text-align: center;
   }
@@ -1188,19 +1187,49 @@ body {
   .footer .contact-info {
     justify-content: center;
   }
-  /* Hero buttons responsive */
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+  
+  /* Hero Section Fix */
+  .hero-slider {
+    min-height: 80vh !important;
+    height: auto !important;
   }
-  .hero-buttons .btn-gradient,
-  .hero-buttons .btn-outline-light {
-    padding: 12px 28px !important;
-    font-size: 14px !important;
-    min-width: 180px !important;
-    width: 100%;
-    max-width: 220px;
+  .slider-container {
+    min-height: 80vh !important;
+    height: auto !important;
+  }
+  .slider-content {
+    padding: 100px 0 60px !important;
+  }
+  .slider-content h1 {
+    font-size: 2rem !important;
+  }
+  .slider-content h6 {
+    font-size: 0.7rem !important;
+    letter-spacing: 3px !important;
+    margin-top: 30px !important;
+    margin-bottom: 15px !important;
+  }
+  .slider-content .lead {
+    font-size: 0.9rem !important;
+    margin-bottom: 30px !important;
+  }
+  
+  /* Arrow Buttons Position Fix */
+  .slider-arrow {
+    top: auto !important;
+    bottom: 30px !important;
+    transform: translateY(0) !important;
+  }
+  .slider-arrow.prev {
+    left: 20px !important;
+    right: auto !important;
+  }
+  .slider-arrow.next {
+    right: 20px !important;
+    left: auto !important;
+  }
+  .slider-dots {
+    bottom: 20px !important;
   }
 }
 
@@ -1249,14 +1278,61 @@ body {
     height: 40px;
     font-size: 1rem;
   }
-  /* Hero buttons responsive */
+  
+  /* Hero Section Fix */
+  .hero-slider {
+    min-height: 75vh !important;
+    height: auto !important;
+  }
+  .slider-container {
+    min-height: 75vh !important;
+    height: auto !important;
+  }
+  .slider-content {
+    padding: 90px 0 50px !important;
+  }
+  .slider-content h1 {
+    font-size: 1.6rem !important;
+  }
+  .slider-content h6 {
+    font-size: 0.6rem !important;
+    letter-spacing: 2px !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .slider-content .lead {
+    font-size: 0.85rem !important;
+    margin-bottom: 25px !important;
+  }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 10px 24px !important;
+    padding: 10px 20px !important;
     font-size: 13px !important;
-    min-width: 160px !important;
+    min-width: 140px !important;
+  }
+  
+  /* Arrow Buttons - Smaller on Very Small Phones */
+  .slider-arrow {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 0.9rem !important;
+    bottom: 25px !important;
+  }
+  .slider-arrow.prev {
+    left: 15px !important;
+  }
+  .slider-arrow.next {
+    right: 15px !important;
+  }
+  .slider-dots {
+    bottom: 15px !important;
+  }
+  .slider-dots .dot {
+    width: 8px !important;
+    height: 8px !important;
   }
 }
+
 /* Responsive footer address */
 @media (max-width: 768px) {
   .footer .contact-info span {
