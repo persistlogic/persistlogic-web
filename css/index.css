@@ -1140,13 +1140,13 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - HEIGHT KAM ===== */
+  /* ===== HERO SECTION - FINAL ===== */
   .hero-slider {
-    min-height: 50vh !important;
+    min-height: 55vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 50vh !important;
+    min-height: 55vh !important;
     height: auto !important;
   }
   .slider-content {
@@ -1156,17 +1156,17 @@ body {
   .slider-content h1 {
     font-size: 2.8rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
   }
   .slider-content h6 {
     font-size: 0.7rem !important;
     letter-spacing: 3px !important;
-    margin-top: 5px !important;
-    margin-bottom: 6px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
   }
   .slider-content .lead {
     font-size: 0.9rem !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 15px !important;
     line-height: 1.4 !important;
   }
   
@@ -1174,37 +1174,37 @@ body {
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 8px !important;
-    gap: 10px !important;
+    margin-top: 10px !important;
+    gap: 12px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 6px 14px !important;
+    padding: 7px 16px !important;
     font-size: 11px !important;
-    min-width: 105px !important;
+    min-width: 110px !important;
     width: auto !important;
-    max-width: 115px !important;
+    max-width: 120px !important;
   }
   
-  /* Arrow Buttons - Get Started & View Work ke Side (Corner) */
+  /* Arrow Buttons - Left & Right Corner (Buttons Ke Side) */
   .slider-arrow {
     top: auto !important;
-    bottom: 42px !important;
+    bottom: 48px !important;
     transform: translateY(0) !important;
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 0.8rem !important;
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 0.85rem !important;
   }
   .slider-arrow.prev {
-    left: 8px !important;
+    left: 10px !important;
     right: auto !important;
   }
   .slider-arrow.next {
-    right: 8px !important;
+    right: 10px !important;
     left: auto !important;
   }
   
-  /* 3 Dots - Buttons ke just neeche */
+  /* 3 Dots - Bottom */
   .slider-dots {
     bottom: 12px !important;
     left: 50% !important;
@@ -1273,33 +1273,33 @@ body {
     height: 30px !important;
   }
   
-  /* ===== HERO SECTION - SMALL PHONE (HEIGHT KAM) ===== */
+  /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 45vh !important;
+    min-height: 50vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 45vh !important;
+    min-height: 50vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 40px 0 15px !important;
+    padding: 45px 0 15px !important;
     text-align: center !important;
   }
   .slider-content h1 {
     font-size: 2.4rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px !important;
   }
   .slider-content h6 {
-    font-size: 0.55rem !important;
+    font-size: 0.6rem !important;
     letter-spacing: 2px !important;
-    margin-top: 4px !important;
-    margin-bottom: 5px !important;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
   }
   .slider-content .lead {
-    font-size: 0.8rem !important;
-    margin-bottom: 10px !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 12px !important;
     line-height: 1.4 !important;
   }
   
@@ -1307,33 +1307,33 @@ body {
   .hero-buttons {
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 6px !important;
-    gap: 8px !important;
+    margin-top: 8px !important;
+    gap: 10px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 5px 12px !important;
+    padding: 6px 14px !important;
     font-size: 10px !important;
-    min-width: 95px !important;
+    min-width: 100px !important;
     width: auto !important;
-    max-width: 105px !important;
+    max-width: 110px !important;
   }
   
-  /* Arrow Buttons - Get Started & View Work ke Side (Corner) */
+  /* Arrow Buttons - Left & Right Corner (Buttons Ke Side) */
   .slider-arrow {
-    width: 28px !important;
-    height: 28px !important;
-    font-size: 0.7rem !important;
-    bottom: 38px !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.75rem !important;
+    bottom: 42px !important;
   }
   .slider-arrow.prev {
-    left: 6px !important;
+    left: 8px !important;
   }
   .slider-arrow.next {
-    right: 6px !important;
+    right: 8px !important;
   }
   
-  /* 3 Dots - Buttons ke just neeche */
+  /* 3 Dots - Bottom */
   .slider-dots {
     bottom: 10px !important;
     left: 50% !important;
