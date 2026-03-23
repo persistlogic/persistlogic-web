@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR - SAME AS INDEX PAGE (NO HAMBURGER, ALL LINKS VISIBLE) ===== */
+/* ===== NAVBAR - EXACT SAME AS INDEX PAGE (NO HAMBURGER, ALL LINKS VISIBLE) ===== */
 .navbar-modern {
   background: #ffffff !important;
   backdrop-filter: none !important;
@@ -233,7 +233,7 @@ body {
   text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Stats Row - Fixed positioning and bottom margin */
+/* Stats Row */
 .stats-row {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -474,7 +474,7 @@ body {
   flex-grow: 1;
 }
 
-/* ===== SECTION 4 - TEAM WITH WHITE BACKGROUND - NAME INITIALS DP ===== */
+/* ===== SECTION 4 - TEAM WITH WHITE BACKGROUND ===== */
 .team-section {
   position: relative;
   padding: 100px 0;
@@ -521,7 +521,6 @@ body {
   box-shadow: 0 30px 50px -20px #20c997;
 }
 
-/* Name Initials DP - Circle with First Letter */
 .team-image {
   width: 180px;
   height: 180px;
@@ -540,7 +539,6 @@ body {
   box-shadow: 0 0 30px rgba(32, 201, 151, 0.4);
 }
 
-/* Initial inside circle - First Letter of Name */
 .team-initial {
   font-size: 4rem;
   font-weight: 700;
@@ -548,7 +546,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Different background colors for each member */
 .team-card:nth-child(1) .team-image {
   background: linear-gradient(135deg, #20c997, #0d9488);
 }
@@ -574,37 +571,6 @@ body {
   font-size: 0.95rem;
   margin-bottom: 0;
   font-weight: 500;
-}
-
-/* Responsive for team images */
-@media (max-width: 991px) {
-  .team-image {
-    width: 150px;
-    height: 150px;
-  }
-  .team-initial {
-    font-size: 3.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .team-image {
-    width: 140px;
-    height: 140px;
-  }
-  .team-initial {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .team-image {
-    width: 120px;
-    height: 120px;
-  }
-  .team-initial {
-    font-size: 2.5rem;
-  }
 }
 
 /* ===== SECTION 5 - ACHIEVEMENTS WITH PULSE ===== */
@@ -698,7 +664,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ===== SECTION 6 - CONTACT WITH LOGO COLOR COMBINATION ===== */
+/* ===== SECTION 6 - CONTACT SECTION ===== */
 .contact-section {
   position: relative;
   padding: 100px 0;
@@ -813,10 +779,6 @@ body {
   color: #94a3b8;
 }
 
-.contact-form .btn-gradient {
-  background: linear-gradient(135deg, #20c997, #0a2540);
-}
-
 /* ===== SECTION TITLES ===== */
 .section-subtitle {
   color: #20c997;
@@ -913,7 +875,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* ===== FLOATING BUTTONS - EXACT SAME AS HOME PAGE ===== */
+/* ===== FLOATING BUTTONS ===== */
 .float-buttons {
   position: fixed;
   bottom: 30px;
@@ -947,12 +909,10 @@ body {
   box-shadow: 0 10px 25px rgba(32, 201, 151, 0.4);
 }
 
-/* Phone Button */
 #phoneFloatBtn {
   background: linear-gradient(135deg, #20c997, #0a2540);
 }
 
-/* WhatsApp Button - Green Like Home Page */
 #whatsappBtn {
   background: linear-gradient(135deg, #25D366, #128C7E);
 }
@@ -961,24 +921,46 @@ body {
   background: linear-gradient(135deg, #128C7E, #075E54);
 }
 
-/* Back to Top Button */
 #backToTop {
   background: linear-gradient(135deg, #0a2540, #20c997);
 }
 
-@media (max-width: 576px) {
-  .float-buttons {
-    bottom: 20px;
-    right: 20px;
-  }
-  .float-buttons a {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
+.contact-info a {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-/* ===== RESPONSIVE STYLES ===== */
+/* ===== SCROLL ANIMATIONS ===== */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease;
+}
+
+.scroll-active {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+}
+
+/* ===== RESPONSIVE STYLES - EXACT SAME AS INDEX PAGE ===== */
 @media (max-width: 1200px) {
   .container {
     max-width: 95%;
@@ -1028,7 +1010,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Navbar - All Links Visible, Horizontal Scroll */
+  /* Navbar - Same as Index Page - All Links in One Line */
   .navbar-modern .container {
     overflow-x: auto !important;
     justify-content: flex-start !important;
@@ -1053,6 +1035,7 @@ body {
   
   .navbar-brand {
     margin-right: 10px !important;
+    flex-shrink: 0 !important;
   }
   
   .navbar-collapse {
@@ -1072,6 +1055,10 @@ body {
   .btn-gradient {
     padding: 5px 10px !important;
     font-size: 11px !important;
+    margin-left: 8px !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    width: auto !important;
   }
   
   .hero-section {
@@ -1139,6 +1126,10 @@ body {
     height: 140px;
   }
   
+  .team-initial {
+    font-size: 3rem;
+  }
+  
   .achievement-card {
     margin-bottom: 20px;
     padding: 1.5rem;
@@ -1166,12 +1157,22 @@ body {
   .footer .contact-info {
     justify-content: center;
   }
+  
+  .footer .d-flex {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
+  /* Navbar - Small Phone */
   .navbar-modern .container {
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: thin !important;
+  }
+  
+  .navbar-modern .container::-webkit-scrollbar {
+    height: 3px !important;
   }
   
   .navbar-modern .nav-link {
@@ -1254,6 +1255,10 @@ body {
     height: 120px;
   }
   
+  .team-initial {
+    font-size: 2.5rem;
+  }
+  
   .team-card h4 {
     font-size: 1.1rem;
   }
@@ -1280,39 +1285,25 @@ body {
   }
   
   .float-buttons a {
-    width: 42px;
-    height: 42px;
-    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }
 
 /* ===== EXTRA FIXES ===== */
-/* Ensure all text in hero section is visible */
 .hero-content .section-description {
   margin-left: 0 !important;
   margin-bottom: 1.5rem;
 }
 
-/* Team images fix */
-.team-image img {
-  display: block;
-}
-
-/* Smooth scroll offset for anchor links */
 html {
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
 
-/* Fix for stats row on mobile */
 @media (max-width: 768px) {
   .stats-row {
     margin-top: 30px;
   }
-}
-
-
-.contact-info a {
-  display: inline-block;
-  white-space: nowrap;
 }
