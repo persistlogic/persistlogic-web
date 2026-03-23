@@ -1061,12 +1061,79 @@ body {
     width: auto !important;
   }
   
+  /* HERO SECTION - FIXES (Height kam, heading top margin kam, heading size bada, 3 cards bottom) */
   .hero-section {
-    padding-bottom: 120px;
+    min-height: 70vh !important;
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .hero-content .section-subtitle {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .hero-content .section-description {
+    margin-bottom: 25px !important;
+  }
+  
+  /* 3 Cards - Bottom Par */
+  .hero-content .row.g-4 {
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .stat-card-round-light {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .stat-card-round-light h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .stat-card-round-light p {
+    font-size: 0.7rem !important;
+  }
+  
+  /* OUR JOURNEY - Center + Top Margin */
+  .story-content {
+    text-align: center;
+  }
+  
+  .story-content .section-subtitle {
+    display: inline-block;
+  }
+  
+  .story-content .section-title {
+    text-align: center;
+  }
+  
+  .story-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  /* GET IN TOUCH - Select Service Width Fix */
+  .contact-section .row.g-4 .col-md-6,
+  .contact-section .row.g-4 .col-6 {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+  
+  .contact-section .row.g-4 .col-12 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  
+  .hero-section {
+    padding-bottom: 120px;
   }
   
   .stats-row {
@@ -1076,19 +1143,6 @@ body {
   
   .stats-row .col-4 {
     margin-bottom: 20px;
-  }
-  
-  .stat-card-round-light {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .stat-card-round-light h3 {
-    font-size: 1.5rem;
-  }
-  
-  .stat-card-round-light p {
-    font-size: 0.7rem;
   }
   
   .section-title {
@@ -1189,8 +1243,29 @@ body {
     height: 30px !important;
   }
   
+  /* Hero Section - Small Phone */
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
+  }
+  
+  .stat-card-round-light {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  
+  .stat-card-round-light h3 {
+    font-size: 1rem !important;
+  }
+  
+  .stat-card-round-light p {
+    font-size: 0.55rem !important;
+  }
+  
+  /* Get in Touch - Small Phone */
+  .contact-section .row.g-4 .col-md-6,
+  .contact-section .row.g-4 .col-6 {
+    width: 50% !important;
+    flex: 0 0 50% !important;
   }
   
   .section-subtitle {
@@ -1204,19 +1279,6 @@ body {
   
   .section-description {
     font-size: 0.9rem;
-  }
-  
-  .stat-card-round-light {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .stat-card-round-light h3 {
-    font-size: 1.2rem;
-  }
-  
-  .stat-card-round-light p {
-    font-size: 0.6rem;
   }
   
   .story-image img {

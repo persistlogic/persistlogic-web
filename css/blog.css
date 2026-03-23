@@ -927,8 +927,23 @@ body {
     height: 40px !important;
   }
   
+  /* ===== BANNER SECTION - FIX (Same as Service & Portfolio Page) ===== */
+  .page-banner {
+    min-height: 25vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 30px !important;
+    margin-top: 0 !important;
+  }
+  
   .banner-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .banner-content p {
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
   }
   
   .section-title h2 {
@@ -939,6 +954,7 @@ body {
     min-height: 460px;
   }
   
+  /* ===== FOOTER - SOCIAL ICONS CENTER ===== */
   .footer .col-lg-4,
   .footer .col-lg-2,
   .footer .col-lg-3 {
@@ -948,6 +964,10 @@ body {
   
   .footer .contact-info {
     justify-content: center;
+  }
+  
+  .footer .d-flex {
+    justify-content: center !important;
   }
 }
 
@@ -972,12 +992,20 @@ body {
     height: 30px !important;
   }
   
+  /* ===== BANNER SECTION - SMALL PHONE (Same as Service & Portfolio Page) ===== */
+  .page-banner {
+    min-height: 22vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+    margin-top: 0 !important;
+  }
+  
   .banner-content h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   
   .banner-content p {
-    font-size: 0.9rem;
+    font-size: 0.85rem !important;
   }
   
   .section-title h2 {

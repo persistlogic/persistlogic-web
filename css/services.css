@@ -606,12 +606,26 @@ body {
     font-size: 11px !important;
   }
   
-  .featured-grid {
-    grid-template-columns: 1fr;
+  /* ===== BANNER SECTION - FIX (Height Kam, Heading Bada, Top Margin Kam) ===== */
+  .page-banner {
+    min-height: 25vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
   }
   
   .banner-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .banner-content p {
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
+  }
+  
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
   
   .page-banner {
@@ -649,8 +663,20 @@ body {
     height: 30px !important;
   }
   
+  /* ===== BANNER SECTION - SMALL PHONE ===== */
+ .page-banner {
+  min-height: 25vh !important;
+  padding-top: 0 !important;
+  padding-bottom: 30px !important;
+  margin-top: 0 !important;
+}
+  
   .banner-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem !important;
+  }
+  
+  .banner-content p {
+    font-size: 0.85rem !important;
   }
   
   .section-title h2 {

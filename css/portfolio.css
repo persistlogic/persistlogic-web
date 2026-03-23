@@ -643,7 +643,7 @@ body {
   }
 }
 
-/* ===== RESPONSIVE STYLES - EXACT SAME AS INDEX PAGE ===== */
+/* ===== RESPONSIVE STYLES - EXACT SAME AS INDEX PAGE WITH BANNER FIX ===== */
 @media (max-width: 1200px) {
   .container {
     max-width: 95%;
@@ -696,8 +696,23 @@ body {
     font-size: 11px !important;
   }
   
+  /* ===== BANNER SECTION - FIX (Same as Service Page) ===== */
+  .page-header {
+    min-height: 25vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 30px !important;
+    margin-top: 0 !important;
+  }
+  
   .header-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .header-content p {
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
   }
   
   .section-title h2 {
@@ -783,8 +798,20 @@ body {
     height: 30px !important;
   }
   
+  /* ===== BANNER SECTION - SMALL PHONE (Same as Service Page) ===== */
+  .page-header {
+    min-height: 22vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+    margin-top: 0 !important;
+  }
+  
   .header-content h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
+  }
+  
+  .header-content p {
+    font-size: 0.85rem !important;
   }
   
   .section-title h2 {
