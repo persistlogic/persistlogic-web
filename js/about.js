@@ -1,4 +1,4 @@
-// Navbar scroll effect
+// ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -8,81 +8,107 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Back to Top button functionality
-document.getElementById('backToTop').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-// WhatsApp button functionality
-document.getElementById('whatsappBtn').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.open('https://wa.me/919996315463?text=Hello%20Persist%20Logic%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services', '_blank');
-});
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]:not(#backToTop):not(#whatsappBtn)').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// ===== BACK TO TOP BUTTON =====
+const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+// ===== WHATSAPP BUTTON =====
+const whatsappBtn = document.getElementById('whatsappBtn');
+if (whatsappBtn) {
+  whatsappBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://wa.me/919996315463?text=Hello%20Persist%20Logic%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services', '_blank');
+  });
+}
+
+// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+document.querySelectorAll('a[href^="#"]:not(#backToTop):not(#whatsappBtn):not(#phoneFloatBtn)').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    
+    e.preventDefault();
+    const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navbarHeight = document.querySelector('.navbar-modern').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
     }
   });
 });
 
-// Contact form submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  // Get form values
-  const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const service = document.querySelector('select[name="service"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
-  
-  // Create email body
-  const subject = 'New Contact Form Submission - About Page';
-  const body = `Name: ${name}%0AEmail: ${email}%0AService: ${service}%0AMessage: ${message}`;
-  
-  // Open default email client
-  window.location.href = `mailto:info@persistlogic.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-  
-  // Show success message
-  alert('Thank you for your message! Your email client will open to send the message.');
-  
-  // Reset form
-  this.reset();
-});
+// ===== CONTACT FORM SUBMISSION =====
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const service = document.querySelector('select[name="service"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+    
+    const subject = `New Contact Form Submission - About Page`;
+    const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
+    
+    window.location.href = `mailto:info@persistlogic.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    
+    alert('Thank you for your message! Your email client will open to send the message.');
+    
+    this.reset();
+  });
+}
 
-// Trigger animations on scroll
-const animateElements = document.querySelectorAll('.slide-left, .slide-right, .fade-up, .zoom-in');
+// ===== SCROLL ANIMATIONS =====
+const animateElements = document.querySelectorAll('.slide-left, .slide-right, .zoom-in');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.animationPlayState = 'running';
+      entry.target.classList.add('scroll-active');
     }
   });
 }, { threshold: 0.1 });
 
 animateElements.forEach(el => {
-  el.style.animationPlayState = 'paused';
   observer.observe(el);
 });
 
-// Initial check for elements in view
-setTimeout(() => {
-  animateElements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.85) {
-      el.style.animationPlayState = 'running';
+// ===== ACTIVE NAVBAR LINK ON SCROLL =====
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+function updateActiveLink() {
+  const scrollPosition = window.scrollY + 100;
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
     }
   });
-}, 100);
+}
+
+window.addEventListener('scroll', updateActiveLink);
+updateActiveLink();

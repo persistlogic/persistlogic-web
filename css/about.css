@@ -12,41 +12,93 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR - FIXED */
+/* ===== NAVBAR - SAME AS INDEX PAGE (NO HAMBURGER, ALL LINKS VISIBLE) ===== */
 .navbar-modern {
-  background-color: white;
-  backdrop-filter: blur(20px);
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
+  padding: 12px 0 !important;
   transition: all 0.3s;
-  z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 99999 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
 }
 
 .navbar-modern.scrolled {
-  background: rgba(255, 255, 255, 0.98) !important;
-  padding: 0.7rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff !important;
+  padding: 8px 0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Brand/Logo */
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
 }
 
 .navbar-logo {
-  height: 60px;
-  width: auto;
-  margin-right: 10px;
-  filter: drop-shadow(0 0 10px rgba(32, 201, 151, 0.2));
+  height: 50px !important;
+  width: auto !important;
+  max-height: 50px !important;
+}
+
+/* Hide Hamburger Button - No Hamburger Menu */
+.navbar-toggler {
+  display: none !important;
+}
+
+/* Navbar Container */
+.navbar-modern .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+  gap: 10px !important;
+}
+
+/* Navbar Collapse - Always Visible */
+.navbar-collapse {
+  display: flex !important;
+  flex: 1 !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+/* Navbar Links */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-wrap: nowrap !important;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
 }
 
 .navbar-modern .nav-link {
   color: #0a0f1e !important;
   font-weight: 500;
-  margin: 0 1rem;
+  padding: 8px 12px !important;
   position: relative;
-  padding: 0.5rem 0 !important;
+  font-size: 15px !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  transition: color 0.3s;
 }
 
 .navbar-modern .nav-link::before {
@@ -70,23 +122,26 @@ body {
   font-weight: 600;
 }
 
+/* Get a Quote Button */
 .btn-gradient {
   background: linear-gradient(135deg, #20c997, #0a2540);
   color: white;
   border: none;
-  padding: 0.8rem 2rem;
+  padding: 8px 18px !important;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
   text-decoration: none;
   display: inline-block;
+  white-space: nowrap !important;
+  font-size: 14px !important;
+  flex-shrink: 0 !important;
+  margin-left: 8px !important;
 }
 
 .btn-gradient:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 30px -10px #20c997;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.3);
   color: white;
 }
 
@@ -101,7 +156,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .hero-overlay {
@@ -127,9 +183,7 @@ body {
   color: white;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
-.hero-content .row.g-4 {
-  margin-bottom: 3rem;
-}
+
 .hero-title span {
   background: linear-gradient(135deg, #fff, #20c997);
   -webkit-background-clip: text;
@@ -177,6 +231,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Stats Row - Fixed positioning and bottom margin */
+.stats-row {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 /* ===== SECTION 2 - STORY WITH WHITE BACKGROUND ===== */
@@ -272,54 +334,6 @@ body {
 
 .story-image:hover img {
   transform: scale(1.05);
-}
-/* Team Card - Updated for Icons */
-.team-card {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: all 0.3s;
-  height: 100%;
-}
-
-.team-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(32,201,151,0.1);
-}
-
-.team-image {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 1.5rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #20c997, #0a2540);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 4rem;
-  transition: all 0.3s;
-}
-
-.team-card:hover .team-image {
-  transform: scale(1.05) rotate(5deg);
-  background: linear-gradient(135deg, #ff6b6b, #667eea);
-}
-
-.team-card h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #0a0f1e;
-}
-
-.team-card p {
-  color: #20c997;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin: 0;
 }
 
 /* Round Stats Cards for Story Section */
@@ -460,7 +474,7 @@ body {
   flex-grow: 1;
 }
 
-/* ===== SECTION 4 - TEAM WITH WHITE BACKGROUND ===== */
+/* ===== SECTION 4 - TEAM WITH WHITE BACKGROUND - NAME INITIALS DP ===== */
 .team-section {
   position: relative;
   padding: 100px 0;
@@ -507,29 +521,49 @@ body {
   box-shadow: 0 30px 50px -20px #20c997;
 }
 
+/* Name Initials DP - Circle with First Letter */
 .team-image {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
-  overflow: hidden;
-  border: 4px solid #20c997;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 .team-card:hover .team-image {
   transform: scale(1.05);
-  box-shadow: 0 0 30px #20c997;
+  box-shadow: 0 0 30px rgba(32, 201, 151, 0.4);
 }
 
-.team-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Initial inside circle - First Letter of Name */
+.team-initial {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Different background colors for each member */
+.team-card:nth-child(1) .team-image {
+  background: linear-gradient(135deg, #20c997, #0d9488);
+}
+.team-card:nth-child(2) .team-image {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+.team-card:nth-child(3) .team-image {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+.team-card:nth-child(4) .team-image {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
 }
 
 .team-card h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #0a0f1e;
@@ -537,8 +571,40 @@ body {
 
 .team-card p {
   color: #20c997;
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Responsive for team images */
+@media (max-width: 991px) {
+  .team-image {
+    width: 150px;
+    height: 150px;
+  }
+  .team-initial {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-image {
+    width: 140px;
+    height: 140px;
+  }
+  .team-initial {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-image {
+    width: 120px;
+    height: 120px;
+  }
+  .team-initial {
+    font-size: 2.5rem;
+  }
 }
 
 /* ===== SECTION 5 - ACHIEVEMENTS WITH PULSE ===== */
@@ -809,24 +875,6 @@ body {
   transform: translateX(5px);
 }
 
-.footer .contact-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0.8rem;
-}
-
-.footer .contact-info i {
-  width: 20px;
-  color: #20c997;
-}
-
-.footer .contact-info span,
-.footer .contact-info a {
-  color: #94a3b8;
-  font-size: 0.95rem;
-}
-
 .social-icon {
   width: 45px;
   height: 45px;
@@ -847,7 +895,25 @@ body {
   transform: translateY(-5px) rotate(360deg);
 }
 
-/* ===== FLOATING BUTTONS ===== */
+.footer .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.footer .contact-info i {
+  width: 20px;
+  color: #20c997;
+}
+
+.footer .contact-info span,
+.footer .contact-info a {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* ===== FLOATING BUTTONS - EXACT SAME AS HOME PAGE ===== */
 .float-buttons {
   position: fixed;
   bottom: 30px;
@@ -859,82 +925,56 @@ body {
 }
 
 .float-buttons a {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: linear-gradient(135deg, #20c997, #0a2540);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: all 0.3s;
   text-decoration: none;
   cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .float-buttons a:hover {
   transform: scale(1.1) rotate(360deg);
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.4);
 }
 
-/* ===== ANIMATION CLASSES ===== */
-.fade-up {
-  animation: fadeUp 1s ease forwards;
+/* Phone Button */
+#phoneFloatBtn {
+  background: linear-gradient(135deg, #20c997, #0a2540);
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+/* WhatsApp Button - Green Like Home Page */
+#whatsappBtn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+#whatsappBtn:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+}
+
+/* Back to Top Button */
+#backToTop {
+  background: linear-gradient(135deg, #0a2540, #20c997);
+}
+
+@media (max-width: 576px) {
+  .float-buttons {
+    bottom: 20px;
+    right: 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.slide-left {
-  animation: slideLeft 1s ease forwards;
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-right {
-  animation: slideRight 1s ease forwards;
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.zoom-in {
-  animation: zoomIn 0.8s ease forwards;
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
+  .float-buttons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }
 
@@ -943,66 +983,111 @@ body {
   .container {
     max-width: 95%;
   }
-  
   .section-title {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 992px) {
-  .hero-title {
-    font-size: 3.5rem;
+@media (max-width: 991px) {
+  .navbar-modern .nav-link {
+    padding: 6px 8px !important;
+    font-size: 13px !important;
   }
-  
+  .btn-gradient {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+  .navbar-logo {
+    height: 40px !important;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
   .stat-card-round-light {
     width: 130px;
     height: 130px;
   }
-  
   .stat-card-round-light h3 {
     font-size: 2rem;
   }
-  
+  .story-stat-card {
+    width: 100px;
+    height: 100px;
+  }
+  .story-stat-card h3 {
+    font-size: 1.6rem;
+  }
   .purpose-card {
-    height: 320px;
-    padding: 1.5rem;
+    height: auto;
+    min-height: 320px;
   }
-  
-  .team-card {
-    padding: 1.5rem;
-  }
-  
   .team-image {
-    width: 160px;
-    height: 160px;
-  }
-  
-  .achievement-card {
-    padding: 2rem;
-  }
-  
-  .achievement-number {
-    font-size: 3rem;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.8rem;
-    text-align: center;
+  /* Navbar - All Links Visible, Horizontal Scroll */
+  .navbar-modern .container {
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    gap: 5px !important;
+    padding: 0 10px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: thin !important;
+  }
+  
+  .navbar-modern .container::-webkit-scrollbar {
+    height: 3px !important;
+  }
+  
+  .navbar-modern .container::-webkit-scrollbar-track {
+    background: #e2e8f0 !important;
+  }
+  
+  .navbar-modern .container::-webkit-scrollbar-thumb {
+    background: #20c997 !important;
+    border-radius: 3px !important;
+  }
+  
+  .navbar-brand {
+    margin-right: 10px !important;
+  }
+  
+  .navbar-collapse {
+    display: flex !important;
+    flex: auto !important;
+  }
+  
+  .navbar-nav {
+    gap: 2px !important;
+  }
+  
+  .navbar-modern .nav-link {
+    padding: 5px 6px !important;
+    font-size: 11px !important;
+  }
+  
+  .btn-gradient {
+    padding: 5px 10px !important;
+    font-size: 11px !important;
   }
   
   .hero-section {
-    text-align: center;
-    min-height: 80vh;
-    padding-top: 100px;
+    padding-bottom: 120px;
   }
   
-  .hero-content .row {
-    justify-content: center;
+  .hero-title {
+    font-size: 2.5rem;
   }
   
-  .hero-content .col-4 {
+  .stats-row {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .stats-row .col-4 {
     margin-bottom: 20px;
   }
   
@@ -1023,16 +1108,8 @@ body {
     font-size: 2rem;
   }
   
-  .story-image {
-    margin-bottom: 30px;
-  }
-  
   .story-image img {
     height: 350px;
-  }
-  
-  .story-content {
-    text-align: center;
   }
   
   .story-stat-card {
@@ -1049,7 +1126,6 @@ body {
   }
   
   .purpose-card {
-    height: auto;
     min-height: 280px;
     margin-bottom: 20px;
   }
@@ -1059,12 +1135,8 @@ body {
   }
   
   .team-image {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .team-card h4 {
-    font-size: 1.2rem;
+    width: 140px;
+    height: 140px;
   }
   
   .achievement-card {
@@ -1094,19 +1166,43 @@ body {
   .footer .contact-info {
     justify-content: center;
   }
-  
-  .navbar-logo {
-    height: 50px;
-  }
 }
 
 @media (max-width: 576px) {
+  .navbar-modern .container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  .navbar-modern .nav-link {
+    padding: 4px 5px !important;
+    font-size: 10px !important;
+  }
+  
+  .btn-gradient {
+    padding: 4px 8px !important;
+    font-size: 10px !important;
+  }
+  
+  .navbar-logo {
+    height: 30px !important;
+  }
+  
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.7rem;
+    padding: 0.3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
   }
   
   .section-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   
   .stat-card-round-light {
@@ -1122,21 +1218,17 @@ body {
     font-size: 0.6rem;
   }
   
-  .section-title {
-    font-size: 1.8rem;
-  }
-  
   .story-image img {
     height: 250px;
   }
   
   .story-stat-card {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
   
   .story-stat-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   .story-stat-card p {
@@ -1148,9 +1240,9 @@ body {
   }
   
   .purpose-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
   }
   
   .purpose-card h3 {
@@ -1162,21 +1254,65 @@ body {
     height: 120px;
   }
   
+  .team-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .team-card p {
+    font-size: 0.85rem;
+  }
+  
   .achievement-number {
     font-size: 2rem;
   }
   
   .contact-image img {
-    height: 250px;
+    height: 200px;
   }
   
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.2rem;
+  }
+  
+  .float-buttons {
+    bottom: 20px;
+    right: 20px;
   }
   
   .float-buttons a {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
   }
+}
+
+/* ===== EXTRA FIXES ===== */
+/* Ensure all text in hero section is visible */
+.hero-content .section-description {
+  margin-left: 0 !important;
+  margin-bottom: 1.5rem;
+}
+
+/* Team images fix */
+.team-image img {
+  display: block;
+}
+
+/* Smooth scroll offset for anchor links */
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+/* Fix for stats row on mobile */
+@media (max-width: 768px) {
+  .stats-row {
+    margin-top: 30px;
+  }
+}
+
+
+.contact-info a {
+  display: inline-block;
+  white-space: nowrap;
 }

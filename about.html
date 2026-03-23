@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>About Us • Persist Logic</title>
 
   <!-- Fonts & Icons -->
@@ -14,14 +14,25 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/about.css">
-   <!-- FAVICON - YEH ADD KARO -->
+  
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="images/icons/logo.png">
   <link rel="shortcut icon" href="images/icons/logo.png" type="image/x-icon">
 
+
+  <style>
+  @media (max-width: 991px) {
+    .navbar-toggler { display: none !important; }
+    .navbar-collapse { display: block !important; }
+    .navbar-nav { flex-direction: row !important; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 0.8rem; }
+    .navbar-nav .nav-link { padding: 0.5rem 0.8rem !important; font-size: 0.85rem; white-space: nowrap; }
+    .btn-gradient.ms-lg-3 { margin-left: 0 !important; margin-top: 0.8rem; display: block; width: 100%; text-align: center; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- NAVBAR - FIXED (LIGHT THEME LIKE OTHER PAGES) -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-modern fixed-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -54,7 +65,7 @@
           <div class="hero-content">
             <span class="section-subtitle slide-left" style="background: rgba(255,255,255,0.2); color: white;"> WELCOME TO PERSIST LOGIC</span>
             <h1 class="hero-title slide-right">We Build <span>Digital</span> Experiences That <span>Inspire</span></h1>
-            <p class="section-description slide-left" style="color: rgba(255,255,255,0.9);">Transforming ideas into innovative solutions since 2018. We're not just developers; we're digital architects creating the future.</p>
+            <p class="section-description slide-left" style="color: rgba(255,255,255,0.9);">Transforming ideas into innovative solutions since 2024. We're not just developers; we're digital architects creating the future.</p>
             <div class="row g-4 slide-left">
               <div class="col-4">
                 <div class="stat-card-round-light">
@@ -81,7 +92,7 @@
     </div>
   </section>
 
-  <!-- SECTION 2 - STORY WITH WHITE BACKGROUND AND NEW IMAGE -->
+  <!-- SECTION 2 - STORY WITH WHITE BACKGROUND -->
   <section class="story-section">
     <div class="floating-shapes">
       <div class="float-shape float-shape1"></div>
@@ -183,55 +194,56 @@
     </div>
   </section>
 
-    <!-- SECTION 4 - TEAM WITH WHITE BACKGROUND (UPDATED - ICONS INSTEAD OF IMAGES) -->
-  <section class="team-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="section-subtitle slide-left"> OUR LEADERS</span>
-        <h2 class="section-title slide-right">Meet the <span>Minds</span> Behind Our Success</h2>
-        <p class="section-description">Passionate experts dedicated to bringing your ideas to life with creativity and technical excellence.</p>
-      </div>
+  <!-- SECTION 4 - TEAM WITH WHITE BACKGROUND -->
+<section class="team-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-subtitle slide-left"> OUR LEADERS</span>
+      <h2 class="section-title slide-right">Meet the <span>Minds</span> Behind Our Success</h2>
+      <p class="section-description">Passionate experts dedicated to bringing your ideas to life with creativity and technical excellence.</p>
+    </div>
 
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card zoom-in">
-            <div class="team-image">
-              <i class="fas fa-user-circle"></i>
-            </div>
-            <h4>Niranjan Singh</h4>
-            <p>Founder & CEO</p>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card zoom-in">
+          <div class="team-image">
+            <div class="team-initial">NS</div>
           </div>
+          <h4>Niranjan Singh</h4>
+          <p>Founder & CEO</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card zoom-in">
-            <div class="team-image">
-              <i class="fas fa-user-circle"></i>
-            </div>
-            <h4>Vikas</h4>
-            <p>Chief Technology Officer</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card zoom-in">
+          <div class="team-image">
+            <div class="team-initial">V</div>
           </div>
+          <h4>Vikash</h4>
+          <p>Chief Technology Officer</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card zoom-in">
-            <div class="team-image">
-              <i class="fas fa-user-circle"></i>
-            </div>
-            <h4>Aashima</h4>
-            <p>Creative Director</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card zoom-in">
+          <div class="team-image">
+            <div class="team-initial">A</div>
           </div>
+          <h4>Ashima</h4>
+          <p>Creative Director</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-card zoom-in">
-            <div class="team-image">
-              <i class="fas fa-user-circle"></i>
-            </div>
-            <h4>Komal</h4>
-            <p>Technical Lead</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card zoom-in">
+          <div class="team-image">
+            <div class="team-initial">K</div>
           </div>
+          <h4>Komal</h4>
+          <p>Engineering Manager</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- SECTION 5 - ACHIEVEMENTS WITH PULSE -->
   <section class="achievements-section">
     <div class="pulse-bg">
@@ -298,7 +310,7 @@
                 <div class="col-md-6">
                   <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email" required>
                 </div>
-                 <div class="col-md-6">
+                <div class="col-md-6">
                   <div class="form-group">
                     <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
                   </div>
@@ -328,67 +340,77 @@
     </div>
   </section>
 
-  <!-- FOOTER - UPDATED WITH CONTACT INFO -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row gy-5">
-        <div class="col-lg-4">
-          <h4 class="fw-bold mb-4"><span style="color: #20c997;">PERSIST</span> LOGIC</h4>
-          <p style="color: #94a3b8;">Enterprise IT solutions that drive digital transformation and business growth.</p>
-          <div class="d-flex gap-3 mt-4">
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-4">
+        <h4 class="fw-bold mb-4"><span style="color: #20c997;">PERSIST</span> LOGIC</h4>
+        <p style="color: #94a3b8; margin-bottom: 1rem; line-height: 1.6;">
+          Enterprise IT solutions that drive digital transformation.<br>
+          We deliver innovative technology solutions tailored to your business needs.<br>
+          Your trusted partner for sustainable digital growth and success.
+        </p>
+         <div class="d-flex gap-3">
+            <a href="https://www.linkedin.com/company/persistlogic" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/persistlogic/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/persistlogic/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/persistlogic" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@PersistLogic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
           </div>
-        </div>
-        <div class="col-lg-2 offset-lg-1">
-          <h5 class="fw-bold mb-4">Explore</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="index.html">Home</a></li>
-            <li class="mb-2"><a href="about.html">About</a></li>
-            <li class="mb-2"><a href="services.html">Services</a></li>
-            <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
-            <li class="mb-2"><a href="blog.html">Blog</a></li>
-            <li class="mb-2"><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h5 class="fw-bold mb-4">Legal</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Privacy</a></li>
-            <li class="mb-2"><a href="#">Terms</a></li>
-            <li class="mb-2"><a href="#">Cookies</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <h5 class="fw-bold mb-4">Contact</h5>
-          <ul class="list-unstyled">
-            <li class="contact-info mb-3">
-              <i class="fas fa-envelope" style="color: #20c997;"></i>
-               <span>info@persistlogic.com</span>
-            </li>
-            <li class="contact-info mb-3">
-              <i class="fas fa-phone" style="color: #20c997;"></i>
-              <a href="tel:+919996315463">+91 99963 15463</a>
-            </li>
-            <li class="contact-info mb-3">
-              <i class="fas fa-map-marker-alt" style="color: #20c997;"></i>
-              <span>New vishal nagar, Rohtak , Haryana</span>
-            </li>
-          </ul>
-        </div>
       </div>
-      <hr class="border-secondary mt-5">
-      <p class="text-center text-secondary small mt-4">© 2026 Persist Logic. All rights reserved.</p>
+      <div class="col-lg-2 offset-lg-1">
+        <h5 class="fw-bold mb-4">Explore</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="about.html">About</a></li>
+          <li class="mb-2"><a href="services.html">Services</a></li>
+          <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+          <li class="mb-2"><a href="blog.html">Blog</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h5 class="fw-bold mb-4">Legal</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Privacy</a></li>
+          <li class="mb-2"><a href="#">Terms</a></li>
+          <li class="mb-2"><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="fw-bold mb-4">Contact</h5>
+        <ul class="list-unstyled">
+          <li class="contact-info mb-3">
+            <i class="fas fa-envelope" style="color: #20c997;"></i>
+             <a href="mailto:info@persistlogic.com" style="color: #94a3b8; text-decoration: none;">
+    info@persistlogic.com
+  </a>
+          </li>
+          <li class="contact-info mb-3">
+            <i class="fas fa-phone" style="color: #20c997;"></i>
+            <a href="tel:+919996315463" style="color: #94a3b8; text-decoration: none;">+91-99963 15463</a>
+          </li>
+           <li class="contact-info mb-3">
+  <i class="fas fa-map-marker-alt"></i>
+  <a href="contact.html" style="color: #94a3b8; text-decoration: none;">
+    New Vishal Nagar, Haryana, Rohtak
+  </a>
+</li>
+        </ul>
+      </div>
     </div>
-  </footer>
+    <hr class="border-secondary mt-5">
+    <p class="text-center text-secondary small mt-4">© 2026 Persist Logic. All rights reserved.</p>
+  </div>
+</footer>
 
   <!-- Floating Buttons -->
   <div class="float-buttons">
     <a href="tel:+919996315463" id="phoneFloatBtn" class="float-phone">
-  <i class="fas fa-phone"></i>  
-</a>
-    <a href="#" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
+      <i class="fas fa-phone"></i>  
+    </a>
+    <a href="https://wa.me/919996315463" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
     <a href="#" id="backToTop"><i class="fas fa-arrow-up"></i></a>
   </div>
 

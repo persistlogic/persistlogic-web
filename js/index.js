@@ -1,4 +1,4 @@
-// Navbar scroll effect
+// ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -8,19 +8,28 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Back to Top button functionality
-document.getElementById('backToTop').addEventListener('click', (e) => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+// ===== BACK TO TOP BUTTON =====
+const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 
-// WhatsApp button functionality
-document.getElementById('whatsappBtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  window.open('https://wa.me/919996315463?text=Hello%20Persist%20Logic%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services', '_blank');
-});
+// ===== WHATSAPP BUTTON =====
+const whatsappBtn = document.getElementById('whatsappBtn');
+if (whatsappBtn) {
+  whatsappBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://wa.me/919996315463?text=Hello%20Persist%20Logic%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services', '_blank');
+  });
+}
 
-// HERO SLIDER FUNCTIONALITY
+// ===== HERO SLIDER FUNCTIONALITY =====
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
 const prevBtn = document.querySelector('.slider-arrow.prev');
@@ -29,22 +38,26 @@ let currentSlide = 0;
 let slideInterval;
 
 function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (dots[i]) dots[i].classList.remove('active');
+  });
   
   slides[index].classList.add('active');
-  dots[index].classList.add('active');
+  if (dots[index]) dots[index].classList.add('active');
   currentSlide = index;
 }
 
 function nextSlide() {
-  let next = (currentSlide + 1) % slides.length;
-  showSlide(next);
+  let newIndex = currentSlide + 1;
+  if (newIndex >= slides.length) newIndex = 0;
+  showSlide(newIndex);
 }
 
 function prevSlide() {
-  let prev = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(prev);
+  let newIndex = currentSlide - 1;
+  if (newIndex < 0) newIndex = slides.length - 1;
+  showSlide(newIndex);
 }
 
 function startAutoSlide() {
@@ -55,16 +68,15 @@ function stopAutoSlide() {
   clearInterval(slideInterval);
 }
 
-// Event listeners for slider
-if (nextBtn && prevBtn) {
-  nextBtn.addEventListener('click', () => {
-    nextSlide();
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
     stopAutoSlide();
     startAutoSlide();
   });
-
-  prevBtn.addEventListener('click', () => {
-    prevSlide();
+  
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
     stopAutoSlide();
     startAutoSlide();
   });
@@ -78,31 +90,24 @@ dots.forEach((dot, index) => {
   });
 });
 
-// Start auto slide
 startAutoSlide();
 
-// SCROLL ANIMATION
+// ===== SCROLL ANIMATIONS =====
 const scrollElements = document.querySelectorAll('.scroll-left, .scroll-right, .scroll-up, .scroll-down, .scroll-zoom');
 
-const elementInView = (el, offset = 0) => {
+const elementInView = (el, offset = 100) => {
   const elementTop = el.getBoundingClientRect().top;
-  return elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset;
+  return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset);
 };
 
 const displayScrollElement = (element) => {
   element.classList.add('scroll-active');
 };
 
-const hideScrollElement = (element) => {
-  element.classList.remove('scroll-active');
-};
-
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
     if (elementInView(el, 100)) {
       displayScrollElement(el);
-    } else {
-      hideScrollElement(el);
     }
   });
 };
@@ -111,55 +116,78 @@ window.addEventListener('scroll', () => {
   handleScrollAnimation();
 });
 
-// Trigger once on load
-setTimeout(handleScrollAnimation, 100);
+handleScrollAnimation();
 
-// ===== FORM SUBMISSION - DYNAMIC SUBJECT LINE =====
+// ===== CONTACT FORM SUBMISSION =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get form values
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
     const phone = document.querySelector('input[name="phone"]').value;
     const service = document.querySelector('select[name="service"]').value;
     const message = document.querySelector('textarea[name="message"]').value;
     
-    // DYNAMIC SUBJECT - User ke message se
-  
-    let subjectLine = message.substring(0, 50);
-    if (message.length > 50) {
-      subjectLine = subjectLine + '...';
-    }
-    
-    
-    const subject = message ? 
-      `Project Inquiry: ${subjectLine}` : 
-      'New Project Inquiry from Website';
-    
-    // Create email body
+    const subject = `New Contact Form Submission from ${name}`;
     const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
     
-    // Open default email client with dynamic subject
     window.location.href = `mailto:info@persistlogic.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     
-    // Reset form
+    alert('Thank you for your message! Your email client will open to send the message.');
+    
     this.reset();
   });
 }
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]:not(#backToTop):not(#whatsappBtn)').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+document.querySelectorAll('a[href^="#"]:not(#backToTop):not(#whatsappBtn):not(#phoneFloatBtn)').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navbarHeight = document.querySelector('.navbar-modern').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
     }
   });
+});
+
+// ===== ACTIVE NAVBAR LINK ON SCROLL =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+function updateActiveLink() {
+  const scrollPosition = window.scrollY + 100;
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+updateActiveLink();
+
+// ===== PRELOADER (Optional) =====
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
 });

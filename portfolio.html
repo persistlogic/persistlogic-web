@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Portfolio • Persist Logic</title>
 
   <!-- Fonts & Icons -->
@@ -16,19 +16,16 @@
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-  <!-- FAVICON - YEH ADD KARO -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="images/icons/logo.png">
   <link rel="shortcut icon" href="images/icons/logo.png" type="image/x-icon">
 
-  <!-- LIGHT NAVBAR (WHITE) -->
+  <!-- NAVBAR - EXACT SAME AS INDEX PAGE (All Links Visible, No Hamburger) -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-modern fixed-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/icons/logo.png" alt="Persist Logic" class="navbar-logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -263,7 +260,7 @@
     </div>
   </div>
 
-  <!-- Project 3 Modal -  -->
+  <!-- Project 3 Modal -->
   <div id="project3-modal" class="project-modal">
     <div class="modal-content">
       <div class="modal-close" onclick="closeProject('project3')"><i class="fas fa-times"></i></div>
@@ -455,68 +452,86 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4">
-          <h4 class="fw-bold mb-4"><span style="color: #20c997;">PERSIST</span> LOGIC</h4>
-          <p style="color: #94a3b8; margin-bottom: 1.5rem;">Enterprise IT solutions that drive digital transformation and business growth.</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+ <!-- FOOTER - Complete with all info -->
+<footer class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h4 class="fw-bold mb-4"><span style="color: #20c997;">PERSIST</span> LOGIC</h4>
+        <p style="color: #94a3b8; margin-bottom: 1rem; line-height: 1.6;">
+          Enterprise IT solutions that drive digital transformation.<br>
+          We deliver innovative technology solutions tailored to your business needs.<br>
+          Your trusted partner for sustainable digital growth and success.
+        </p>
+         <div class="d-flex gap-3">
+            <a href="https://www.linkedin.com/company/persistlogic" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/persistlogic/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/persistlogic/"  target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/persistlogic" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@PersistLogic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
           </div>
-        </div>
-        <div class="col-lg-2 offset-lg-1">
-          <h5 class="fw-bold mb-3" style="color: white;">Explore</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="index.html">Home</a></li>
-            <li class="mb-2"><a href="about.html">About</a></li>
-            <li class="mb-2"><a href="services.html">Services</a></li>
-            <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
-            <li class="mb-2"><a href="blog.html">Blog</a></li>
-            <li class="mb-2"><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2">
-          <h5 class="fw-bold mb-3" style="color: white;">Legal</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Privacy</a></li>
-            <li class="mb-2"><a href="#">Terms</a></li>
-            <li class="mb-2"><a href="#">Cookies</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <h5 class="fw-bold mb-3" style="color: white;">Contact</h5>
-          <ul class="list-unstyled">
-            <li class="contact-info mb-3">
-              <i class="fas fa-envelope"></i>
-               <span>info@persistlogic.com</span>
-            </li>
-            <li class="contact-info mb-3">
-              <i class="fas fa-phone"></i>
-              <a href="tel:+919996315463">+91 99963 15463</a>
-            </li>
-            <li class="contact-info mb-3">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>New Vishal Nagar, Rohtak</span>
-            </li>
-          </ul>
-        </div>
       </div>
-      <hr class="mt-4" style="border-color: rgba(255,255,255,0.1);">
-      <p class="text-center text-secondary small mt-3">© 2026 Persist Logic. All rights reserved.</p>
+      <div class="col-lg-2 offset-lg-1">
+        <h5 class="fw-bold mb-3" style="color: white;">Explore</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="about.html">About</a></li>
+          <li class="mb-2"><a href="services.html">Services</a></li>
+          <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+          <li class="mb-2"><a href="blog.html">Blog</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h5 class="fw-bold mb-3" style="color: white;">Legal</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#">Terms of Service</a></li>
+          <li class="mb-2"><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="fw-bold mb-3" style="color: white;">Contact Info</h5>
+        <ul class="list-unstyled">
+          <li class="contact-info mb-3">
+            <i class="fas fa-envelope"></i>
+             <a href= "mailto:info@persistlogic.com" style="color: #94a3b8; text-decoration: none;">
+    info@persistlogic.com
+  </a>
+          </li>
+          <li class="contact-info mb-3">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919996315463" style="color: #94a3b8; text-decoration: none;">+91-99963 15463</a>
+          </li>
+          <li class="contact-info mb-3">
+  <i class="fas fa-map-marker-alt"></i>
+  <a href="contact.html" style="color: #94a3b8; text-decoration: none;">
+    New Vishal Nagar, Haryana, Rohtak
+  </a>
+</li>
+        </ul>
+      </div>
     </div>
-  </footer>
+    <hr class="mt-4" style="border-color: rgba(255,255,255,0.1);">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="text-secondary small mb-0">© 2026 Persist Logic. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <!-- Floating Buttons -->
   <div class="float-buttons">
     <a href="tel:+919996315463" id="phoneFloatBtn" class="float-phone">
-  <i class="fas fa-phone"></i>  
-</a>
-    <a href="#" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
-    <a href="#" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+      <i class="fas fa-phone"></i>  
+    </a>
+    <a href="https://wa.me/919996315463" id="whatsappBtn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </div>
 
   <!-- Bootstrap JS -->
