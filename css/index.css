@@ -1164,26 +1164,28 @@ body {
     margin-bottom: 10px !important;
   }
   .slider-content .lead {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     margin-bottom: 20px !important;
     line-height: 1.5 !important;
   }
   
-  /* Buttons */
+  /* Buttons - Side by Side, Center */
   .hero-buttons {
-    margin-top: 15px !important;
-    gap: 12px !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+    gap: 15px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 8px 16px !important;
+    padding: 8px 20px !important;
     font-size: 12px !important;
-    min-width: 120px !important;
+    min-width: 130px !important;
     width: auto !important;
-    max-width: 130px !important;
+    max-width: 140px !important;
   }
   
-  /* CHANGE 1: Arrow Buttons - Get Started & View Work ke Side */
+  /* Arrow Buttons - Left & Right Side (Buttons Ke Side) */
   .slider-arrow {
     top: auto !important;
     bottom: 80px !important;
@@ -1201,9 +1203,11 @@ body {
     left: auto !important;
   }
   
-  /* CHANGE 2: 3 Dots - Thoda Upar */
+  /* 3 Dots - Center, Bottom Se Thoda Upar */
   .slider-dots {
-    bottom: 25px !important;
+    bottom: 30px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
   
   /* Footer Social Icons - Center */
@@ -1231,16 +1235,6 @@ body {
   }
   .logo-item img {
     height: 40px;
-  }
-  .hero-buttons {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  .hero-buttons .btn-gradient,
-  .hero-buttons .btn-outline-light {
-    width: 100%;
-    text-align: center;
   }
   .about-section .row {
     text-align: center;
@@ -1298,26 +1292,28 @@ body {
     margin-bottom: 8px !important;
   }
   .slider-content .lead {
-    font-size: 0.85rem !important;
-    margin-bottom: 15px !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 18px !important;
     line-height: 1.4 !important;
   }
   
-  /* Buttons */
+  /* Buttons - Side by Side, Center */
   .hero-buttons {
-    margin-top: 10px !important;
-    gap: 10px !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 15px !important;
+    gap: 12px !important;
   }
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 7px 14px !important;
+    padding: 7px 16px !important;
     font-size: 11px !important;
-    min-width: 110px !important;
+    min-width: 115px !important;
     width: auto !important;
-    max-width: 120px !important;
+    max-width: 125px !important;
   }
   
-  /* CHANGE 1: Arrow Buttons - Get Started & View Work ke Side (Small Phone) */
+  /* Arrow Buttons - Left & Right Side (Buttons Ke Side) */
   .slider-arrow {
     width: 35px !important;
     height: 35px !important;
@@ -1331,9 +1327,11 @@ body {
     right: 15px !important;
   }
   
-  /* CHANGE 2: 3 Dots - Thoda Upar (Small Phone) */
+  /* 3 Dots - Center, Bottom Se Thoda Upar */
   .slider-dots {
-    bottom: 20px !important;
+    bottom: 25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
   .slider-dots .dot {
     width: 8px !important;
