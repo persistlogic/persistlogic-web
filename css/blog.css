@@ -93,6 +93,7 @@ body {
   font-size: 15px !important;
   white-space: nowrap !important;
   display: inline-block !important;
+  transition: color 0.3s;
 }
 
 .navbar-modern .nav-link::before {
@@ -759,11 +760,20 @@ body {
   transition: all 0.3s;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .float-buttons a:hover {
-  transform: scale(1.1) rotate(360deg);
-  box-shadow: 0 10px 30px rgba(32, 201, 151, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.4);
+}
+
+#whatsappBtn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+#backToTop {
+  background: linear-gradient(135deg, #0a2540, #20c997);
 }
 
 /* ===== FOOTER ===== */
@@ -927,10 +937,10 @@ body {
     height: 40px !important;
   }
   
-  /* ===== BANNER SECTION - FIX (Same as Service & Portfolio Page) ===== */
+  /* ===== BANNER SECTION - FIX (Heading Top Se Margin) ===== */
   .page-banner {
-    min-height: 25vh !important;
-    padding-top: 0 !important;
+    min-height: 28vh !important;
+    padding-top: 90px !important;
     padding-bottom: 30px !important;
     margin-top: 0 !important;
   }
@@ -946,15 +956,10 @@ body {
     margin-top: 0 !important;
   }
   
-  .section-title h2 {
-    font-size: 2rem;
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
   
-  .blog-card {
-    min-height: 460px;
-  }
-  
-  /* ===== FOOTER - SOCIAL ICONS CENTER ===== */
   .footer .col-lg-4,
   .footer .col-lg-2,
   .footer .col-lg-3 {
@@ -969,17 +974,13 @@ body {
   .footer .d-flex {
     justify-content: center !important;
   }
+  
+  .blog-card {
+    min-height: 460px;
+  }
 }
 
 @media (max-width: 576px) {
-  .navbar-modern .container {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: thin !important;
-  }
-  .navbar-modern .container::-webkit-scrollbar {
-    height: 3px !important;
-  }
   .navbar-modern .nav-link {
     padding: 4px 5px !important;
     font-size: 10px !important;
@@ -992,11 +993,11 @@ body {
     height: 30px !important;
   }
   
-  /* ===== BANNER SECTION - SMALL PHONE (Same as Service & Portfolio Page) ===== */
+  /* ===== BANNER SECTION - SMALL PHONE (Heading Top Se Margin) ===== */
   .page-banner {
-    min-height: 22vh !important;
-    padding-top: 0 !important;
-    padding-bottom: 25px !important;
+    min-height: 28vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
     margin-top: 0 !important;
   }
   
@@ -1075,6 +1076,7 @@ body {
     font-size: 1.2rem;
   }
 }
+
 .contact-info a {
   display: inline-block;
   white-space: nowrap;

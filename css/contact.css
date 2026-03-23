@@ -795,7 +795,7 @@ body {
   }
 }
 
-/* ===== RESPONSIVE STYLES - SAME AS HOME PAGE WITH BANNER FIX ===== */
+/* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1200px) {
   .container {
     max-width: 95%;
@@ -850,10 +850,10 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== BANNER SECTION - FIX (Same as Blog/Service/Portfolio Page) ===== */
+  /* ===== BANNER SECTION - FIX (Heading Top Se Margin) ===== */
   .page-banner {
-    min-height: 25vh !important;
-    padding-top: 0 !important;
+    min-height: 28vh !important;
+    padding-top: 90px !important;
     padding-bottom: 30px !important;
     margin-top: 0 !important;
   }
@@ -934,11 +934,11 @@ body {
     height: 30px !important;
   }
   
-  /* ===== BANNER SECTION - SMALL PHONE (Same as Blog/Service/Portfolio Page) ===== */
+  /* ===== BANNER SECTION - SMALL PHONE (Heading Top Se Margin) ===== */
   .page-banner {
-    min-height: 22vh !important;
-    padding-top: 0 !important;
-    padding-bottom: 25px !important;
+    min-height: 28vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
     margin-top: 0 !important;
   }
   

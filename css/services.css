@@ -606,10 +606,10 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== BANNER SECTION - FIX (Height Kam, Heading Bada, Top Margin Kam) ===== */
+  /* ===== BANNER SECTION - FIX (Heading Top Se Margin) ===== */
   .page-banner {
-    min-height: 25vh !important;
-    padding-top: 70px !important;
+    min-height: 28vh !important;
+    padding-top: 90px !important;
     padding-bottom: 30px !important;
   }
   
@@ -663,13 +663,13 @@ body {
     height: 30px !important;
   }
   
-  /* ===== BANNER SECTION - SMALL PHONE ===== */
- .page-banner {
-  min-height: 25vh !important;
-  padding-top: 0 !important;
-  padding-bottom: 30px !important;
-  margin-top: 0 !important;
-}
+  /* ===== BANNER SECTION - SMALL PHONE (Heading Top Se Margin) ===== */
+  .page-banner {
+    min-height: 28vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
+    margin-top: 0 !important;
+  }
   
   .banner-content h1 {
     font-size: 2rem !important;

@@ -1102,7 +1102,7 @@ body {
     font-size: 0.7rem !important;
   }
   
-  /* OUR JOURNEY - Center + Top Margin */
+  /* OUR JOURNEY - Center + Top Margin (FIXED) */
   .story-content {
     text-align: center;
   }
@@ -1116,7 +1116,7 @@ body {
   }
   
   .story-section {
-    padding-top: 60px !important;
+    padding-top: 80px !important;
     padding-bottom: 60px !important;
   }
   
@@ -1130,6 +1130,14 @@ body {
   .contact-section .row.g-4 .col-12 {
     width: 100% !important;
     flex: 0 0 100% !important;
+  }
+  
+  /* Send Message Button - Center (FIXED) */
+  .contact-section .submit-btn,
+  .contact-section .btn-gradient {
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   
   .hero-section {
@@ -1266,6 +1274,14 @@ body {
   .contact-section .row.g-4 .col-6 {
     width: 50% !important;
     flex: 0 0 50% !important;
+  }
+  
+  /* Send Message Button - Center (FIXED) */
+  .contact-section .submit-btn,
+  .contact-section .btn-gradient {
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   
   .section-subtitle {
