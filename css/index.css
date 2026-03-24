@@ -1140,17 +1140,17 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - ARROWS BESIDE BUTTONS, HEIGHT KAM ===== */
+  /* ===== HERO SECTION - ARROWS IN CORNERS (LIKE LAPTOP) ===== */
   .hero-slider {
-    min-height: 65vh !important;
+    min-height: 68vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 65vh !important;
+    min-height: 68vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 55px 0 25px !important;
+    padding: 60px 0 30px !important;
     text-align: center !important;
   }
   
@@ -1185,28 +1185,17 @@ body {
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* WRAPPER - Arrows + Buttons Container */
-  .hero-buttons-wrapper {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 12px !important;
-    margin-top: 15px !important;
-    flex-wrap: wrap !important;
-  }
-  
-  /* Buttons Container */
+  /* Buttons - Center */
   .hero-buttons {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 15px !important;
-    margin: 0 !important;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
   }
   
-  /* Buttons Style */
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
     padding: 10px 24px !important;
@@ -1216,44 +1205,47 @@ body {
     max-width: 135px !important;
   }
   
-  /* Arrow Buttons - Beside Get Started & View Work */
+  /* Arrow Buttons - Corners (Like Laptop) */
   .slider-arrow {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    display: inline-flex !important;
-    width: 38px !important;
-    height: 38px !important;
-    font-size: 0.9rem !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 1rem !important;
     background: rgba(255, 255, 255, 0.3) !important;
     backdrop-filter: blur(10px) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
     border-radius: 50% !important;
     cursor: pointer !important;
     transition: all 0.3s !important;
-    margin: 0 !important;
+    z-index: 10 !important;
+  }
+  
+  .slider-arrow.prev {
+    left: 15px !important;
+    right: auto !important;
+  }
+  
+  .slider-arrow.next {
+    right: 15px !important;
+    left: auto !important;
   }
   
   .slider-arrow:hover {
     background: #20c997 !important;
     border-color: #20c997 !important;
-    transform: scale(1.05) !important;
+    transform: translateY(-50%) scale(1.05) !important;
   }
   
-  /* Remove default absolute positioning */
-  .slider-arrow.prev,
-  .slider-arrow.next {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
+  /* Hide any wrapper that might interfere */
+  .hero-buttons-wrapper {
+    display: none !important;
   }
   
   /* 3 Dots */
   .slider-dots {
-    bottom: 12px !important;
+    bottom: 15px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     position: absolute !important;
@@ -1323,15 +1315,15 @@ body {
   
   /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 60vh !important;
+    min-height: 62vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 60vh !important;
+    min-height: 62vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 50px 0 20px !important;
+    padding: 55px 0 25px !important;
     text-align: center !important;
   }
   
@@ -1355,13 +1347,9 @@ body {
     line-height: 1.4 !important;
   }
   
-  .hero-buttons-wrapper {
-    gap: 10px !important;
-    margin-top: 12px !important;
-  }
-  
   .hero-buttons {
     gap: 12px !important;
+    margin-top: 12px !important;
   }
   
   .hero-buttons .btn-gradient,
@@ -1373,18 +1361,27 @@ body {
     max-width: 120px !important;
   }
   
+  /* Arrow Buttons - Corners (Small Phone) */
   .slider-arrow {
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 0.8rem !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .slider-arrow.prev {
+    left: 12px !important;
+  }
+  
+  .slider-arrow.next {
+    right: 12px !important;
   }
   
   .slider-dots {
-    bottom: 10px !important;
+    bottom: 12px !important;
   }
   .slider-dots .dot {
-    width: 7px !important;
-    height: 7px !important;
+    width: 8px !important;
+    height: 8px !important;
   }
   
   .section-title h2 {
