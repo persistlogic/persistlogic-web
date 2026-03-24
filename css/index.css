@@ -219,6 +219,7 @@ body {
   align-items: center;
 }
 
+/* Default Arrow Styles - Hidden on Mobile, Visible on Desktop */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -1140,7 +1141,7 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - ARROWS CENTER WITH BUTTONS ===== */
+  /* ===== HERO SECTION - ARROWS BESIDE BUTTONS (WORKING) ===== */
   .hero-slider {
     min-height: 75vh !important;
     height: auto !important;
@@ -1185,72 +1186,76 @@ body {
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* Buttons Container */
+  /* HIDE DEFAULT ABSOLUTE POSITIONED ARROWS */
+  .slider-arrow {
+    display: none !important;
+  }
+  
+  /* CREATE NEW INLINE ARROWS INSIDE BUTTONS CONTAINER */
   .hero-buttons {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 20px !important;
+    gap: 12px !important;
     margin-top: 20px !important;
     margin-bottom: 15px !important;
-    position: relative !important;
+    flex-wrap: wrap !important;
+  }
+  
+  /* Add Left Arrow as first child */
+  .hero-buttons::before {
+    content: "◀";
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s !important;
+    margin-right: 5px !important;
+  }
+  
+  /* Add Right Arrow as last child */
+  .hero-buttons::after {
+    content: "▶";
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s !important;
+    margin-left: 5px !important;
+  }
+  
+  /* Arrow Hover Effect */
+  .hero-buttons::before:hover,
+  .hero-buttons::after:hover {
+    background: #20c997 !important;
+    transform: scale(1.1) !important;
   }
   
   /* Buttons Style */
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 12px 28px !important;
+    padding: 12px 24px !important;
     font-size: 14px !important;
-    min-width: 140px !important;
+    min-width: 130px !important;
     width: auto !important;
-    max-width: 150px !important;
-  }
-  
-  /* Arrow Buttons - Left & Right of Buttons */
-  .slider-arrow {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    display: inline-flex !important;
-    width: 42px !important;
-    height: 42px !important;
-    font-size: 1rem !important;
-    margin: 0 10px !important;
-    background: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  
-  /* Hide Default Absolute Positioning */
-  .slider-arrow.prev,
-  .slider-arrow.next {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-  }
-  
-  /* Create New Container for Arrows + Buttons */
-  .slider-content .row .col-lg-8 {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  
-  /* Wrapper for Arrows and Buttons */
-  .hero-buttons-wrapper {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 15px !important;
-    margin-top: 20px !important;
-    flex-wrap: wrap !important;
+    max-width: 140px !important;
   }
   
   /* 3 Dots */
@@ -1357,30 +1362,27 @@ body {
     line-height: 1.4 !important;
   }
   
+  /* Arrows Beside Buttons - Small Phone */
   .hero-buttons {
-    gap: 15px !important;
+    gap: 10px !important;
     margin-top: 15px !important;
     margin-bottom: 12px !important;
   }
-  .hero-buttons .btn-gradient,
-  .hero-buttons .btn-outline-light {
-    padding: 10px 22px !important;
-    font-size: 12px !important;
-    min-width: 120px !important;
-    width: auto !important;
-    max-width: 130px !important;
-  }
   
-  .slider-arrow {
+  .hero-buttons::before,
+  .hero-buttons::after {
     width: 36px !important;
     height: 36px !important;
-    font-size: 0.9rem !important;
-    margin: 0 8px !important;
+    font-size: 0.85rem !important;
   }
   
-  .hero-buttons-wrapper {
-    gap: 12px !important;
-    margin-top: 15px !important;
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    padding: 10px 20px !important;
+    font-size: 12px !important;
+    min-width: 115px !important;
+    width: auto !important;
+    max-width: 125px !important;
   }
   
   .slider-dots {
