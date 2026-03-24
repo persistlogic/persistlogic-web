@@ -1179,7 +1179,7 @@ body {
   
   /* We build powerful... */
   .slider-content .lead {
-    font-size: 0.95rem !important;
+    font-size: 1.8rem !important;
     margin-bottom: 25px !important;
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.85) !important;
@@ -1228,11 +1228,13 @@ body {
   .slider-arrow.prev {
     left: 15px !important;
     right: auto !important;
+    margin-top: 182px;
   }
   
   .slider-arrow.next {
     right: 15px !important;
     left: auto !important;
+    margin-top: 180px;
   }
   
   .slider-arrow:hover {
@@ -1326,7 +1328,7 @@ body {
   }
   
   .slider-content h6 {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     letter-spacing: 4px !important;
     margin-top: 20px !important;
     margin-bottom: 15px !important;
@@ -1494,5 +1496,6 @@ body {
     padding: 8px 20px !important;
     font-size: 13px !important;
     min-width: 115px !important;
+    
   }
 }
