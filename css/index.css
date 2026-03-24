@@ -1140,17 +1140,17 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - ARROWS IN CORNERS (LIKE LAPTOP) ===== */
+  /* ===== HERO SECTION - PHONE (Arrows Visible, Buttons Near Dots, Heading Bada) ===== */
   .hero-slider {
-    min-height: 68vh !important;
+    min-height: 70vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 68vh !important;
+    min-height: 70vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 60px 0 30px !important;
+    padding: 60px 0 25px !important;
     text-align: center !important;
   }
   
@@ -1159,19 +1159,19 @@ body {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    font-size: 0.8rem !important;
+    font-size: 0.85rem !important;
     font-weight: 700 !important;
-    letter-spacing: 4px !important;
-    margin-top: 25px !important;
-    margin-bottom: 18px !important;
+    letter-spacing: 5px !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
     white-space: nowrap !important;
   }
   
-  /* Where Logic Meets Creativity */
+  /* Where Logic Meets Creativity - Heading Bada */
   .slider-content h1 {
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
     line-height: 1.2 !important;
     margin-bottom: 18px !important;
     color: white !important;
@@ -1179,40 +1179,40 @@ body {
   
   /* We build powerful... */
   .slider-content .lead {
-    font-size: 0.95rem !important;
-    margin-bottom: 22px !important;
+    font-size: 1rem !important;
+    margin-bottom: 20px !important;
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* Buttons - Center */
+  /* Buttons - Near Dots */
   .hero-buttons {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 15px !important;
-    margin-top: 15px !important;
+    gap: 18px !important;
+    margin-top: 10px !important;
     margin-bottom: 0 !important;
   }
   
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 10px 24px !important;
+    padding: 10px 26px !important;
     font-size: 13px !important;
-    min-width: 125px !important;
+    min-width: 130px !important;
     width: auto !important;
-    max-width: 135px !important;
+    max-width: 140px !important;
   }
   
-  /* Arrow Buttons - Corners (Like Laptop) */
+  /* Arrow Buttons - Corners (Visible) */
   .slider-arrow {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    width: 42px !important;
-    height: 42px !important;
-    font-size: 1rem !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.1rem !important;
     background: rgba(255, 255, 255, 0.3) !important;
     backdrop-filter: blur(10px) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -1220,15 +1220,18 @@ body {
     cursor: pointer !important;
     transition: all 0.3s !important;
     z-index: 10 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   
   .slider-arrow.prev {
-    left: 15px !important;
+    left: 12px !important;
     right: auto !important;
   }
   
   .slider-arrow.next {
-    right: 15px !important;
+    right: 12px !important;
     left: auto !important;
   }
   
@@ -1238,14 +1241,9 @@ body {
     transform: translateY(-50%) scale(1.05) !important;
   }
   
-  /* Hide any wrapper that might interfere */
-  .hero-buttons-wrapper {
-    display: none !important;
-  }
-  
   /* 3 Dots */
   .slider-dots {
-    bottom: 15px !important;
+    bottom: 12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     position: absolute !important;
@@ -1315,69 +1313,68 @@ body {
   
   /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 62vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 62vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 55px 0 25px !important;
+    padding: 55px 0 20px !important;
     text-align: center !important;
   }
   
   .slider-content h6 {
-    font-size: 0.7rem !important;
-    letter-spacing: 3px !important;
-    white-space: nowrap !important;
-    margin-top: 20px !important;
-    margin-bottom: 15px !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 4px !important;
+    margin-top: 18px !important;
+    margin-bottom: 12px !important;
   }
   
   .slider-content h1 {
-    font-size: 2.6rem !important;
+    font-size: 2.8rem !important;
     line-height: 1.2 !important;
     margin-bottom: 15px !important;
   }
   
   .slider-content .lead {
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
     margin-bottom: 18px !important;
     line-height: 1.4 !important;
   }
   
   .hero-buttons {
-    gap: 12px !important;
-    margin-top: 12px !important;
+    gap: 15px !important;
+    margin-top: 8px !important;
   }
   
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 8px 18px !important;
-    font-size: 11px !important;
-    min-width: 110px !important;
+    padding: 8px 20px !important;
+    font-size: 12px !important;
+    min-width: 115px !important;
     width: auto !important;
-    max-width: 120px !important;
+    max-width: 125px !important;
   }
   
-  /* Arrow Buttons - Corners (Small Phone) */
+  /* Arrow Buttons - Corners (Visible) */
   .slider-arrow {
-    width: 36px !important;
-    height: 36px !important;
-    font-size: 0.85rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 0.95rem !important;
   }
   
   .slider-arrow.prev {
-    left: 12px !important;
+    left: 10px !important;
   }
   
   .slider-arrow.next {
-    right: 12px !important;
+    right: 10px !important;
   }
   
   .slider-dots {
-    bottom: 12px !important;
+    bottom: 10px !important;
   }
   .slider-dots .dot {
     width: 8px !important;
