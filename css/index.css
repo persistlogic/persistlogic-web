@@ -219,7 +219,6 @@ body {
   align-items: center;
 }
 
-/* Default Arrow Styles - Hidden on Mobile, Visible on Desktop */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -1141,17 +1140,17 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION - ARROWS BESIDE BUTTONS (WORKING) ===== */
+  /* ===== HERO SECTION - ARROWS BESIDE BUTTONS, HEIGHT KAM ===== */
   .hero-slider {
-    min-height: 75vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 75vh !important;
+    min-height: 65vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 65px 0 35px !important;
+    padding: 55px 0 25px !important;
     text-align: center !important;
   }
   
@@ -1160,107 +1159,101 @@ body {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
     font-weight: 700 !important;
-    letter-spacing: 5px !important;
-    margin-top: 30px !important;
-    margin-bottom: 20px !important;
+    letter-spacing: 4px !important;
+    margin-top: 25px !important;
+    margin-bottom: 18px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
     white-space: nowrap !important;
   }
   
-  /* Where Logic Meets Creativity - Heading Bada */
+  /* Where Logic Meets Creativity */
   .slider-content h1 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 22px !important;
+    margin-bottom: 18px !important;
     color: white !important;
   }
   
   /* We build powerful... */
   .slider-content .lead {
-    font-size: 1rem !important;
-    margin-bottom: 28px !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 22px !important;
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.85) !important;
   }
   
-  /* HIDE DEFAULT ABSOLUTE POSITIONED ARROWS */
-  .slider-arrow {
-    display: none !important;
-  }
-  
-  /* CREATE NEW INLINE ARROWS INSIDE BUTTONS CONTAINER */
-  .hero-buttons {
+  /* WRAPPER - Arrows + Buttons Container */
+  .hero-buttons-wrapper {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 12px !important;
-    margin-top: 20px !important;
-    margin-bottom: 15px !important;
+    margin-top: 15px !important;
     flex-wrap: wrap !important;
   }
   
-  /* Add Left Arrow as first child */
-  .hero-buttons::before {
-    content: "◀";
-    display: inline-flex !important;
-    align-items: center !important;
+  /* Buttons Container */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: center !important;
-    width: 42px !important;
-    height: 42px !important;
-    background: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 50% !important;
-    color: white !important;
-    font-size: 1rem !important;
-    cursor: pointer !important;
-    transition: all 0.3s !important;
-    margin-right: 5px !important;
-  }
-  
-  /* Add Right Arrow as last child */
-  .hero-buttons::after {
-    content: "▶";
-    display: inline-flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    width: 42px !important;
-    height: 42px !important;
-    background: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 50% !important;
-    color: white !important;
-    font-size: 1rem !important;
-    cursor: pointer !important;
-    transition: all 0.3s !important;
-    margin-left: 5px !important;
-  }
-  
-  /* Arrow Hover Effect */
-  .hero-buttons::before:hover,
-  .hero-buttons::after:hover {
-    background: #20c997 !important;
-    transform: scale(1.1) !important;
+    gap: 15px !important;
+    margin: 0 !important;
   }
   
   /* Buttons Style */
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 12px 24px !important;
-    font-size: 14px !important;
-    min-width: 130px !important;
+    padding: 10px 24px !important;
+    font-size: 13px !important;
+    min-width: 125px !important;
     width: auto !important;
-    max-width: 140px !important;
+    max-width: 135px !important;
+  }
+  
+  /* Arrow Buttons - Beside Get Started & View Work */
+  .slider-arrow {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    display: inline-flex !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 0.9rem !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transition: all 0.3s !important;
+    margin: 0 !important;
+  }
+  
+  .slider-arrow:hover {
+    background: #20c997 !important;
+    border-color: #20c997 !important;
+    transform: scale(1.05) !important;
+  }
+  
+  /* Remove default absolute positioning */
+  .slider-arrow.prev,
+  .slider-arrow.next {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
   }
   
   /* 3 Dots */
   .slider-dots {
-    bottom: 15px !important;
+    bottom: 12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     position: absolute !important;
@@ -1330,67 +1323,68 @@ body {
   
   /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
-    min-height: 70vh !important;
+    min-height: 60vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 70vh !important;
+    min-height: 60vh !important;
     height: auto !important;
   }
   .slider-content {
-    padding: 55px 0 30px !important;
+    padding: 50px 0 20px !important;
     text-align: center !important;
   }
   
   .slider-content h6 {
-    font-size: 0.75rem !important;
+    font-size: 0.7rem !important;
     letter-spacing: 3px !important;
     white-space: nowrap !important;
-    margin-top: 25px !important;
-    margin-bottom: 18px !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
   }
   
   .slider-content h1 {
-    font-size: 3rem !important;
+    font-size: 2.6rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 15px !important;
   }
   
   .slider-content .lead {
-    font-size: 0.9rem !important;
-    margin-bottom: 22px !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 18px !important;
     line-height: 1.4 !important;
   }
   
-  /* Arrows Beside Buttons - Small Phone */
-  .hero-buttons {
+  .hero-buttons-wrapper {
     gap: 10px !important;
-    margin-top: 15px !important;
-    margin-bottom: 12px !important;
+    margin-top: 12px !important;
   }
   
-  .hero-buttons::before,
-  .hero-buttons::after {
-    width: 36px !important;
-    height: 36px !important;
-    font-size: 0.85rem !important;
+  .hero-buttons {
+    gap: 12px !important;
   }
   
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
-    padding: 10px 20px !important;
-    font-size: 12px !important;
-    min-width: 115px !important;
+    padding: 8px 18px !important;
+    font-size: 11px !important;
+    min-width: 110px !important;
     width: auto !important;
-    max-width: 125px !important;
+    max-width: 120px !important;
+  }
+  
+  .slider-arrow {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.8rem !important;
   }
   
   .slider-dots {
-    bottom: 12px !important;
+    bottom: 10px !important;
   }
   .slider-dots .dot {
-    width: 8px !important;
-    height: 8px !important;
+    width: 7px !important;
+    height: 7px !important;
   }
   
   .section-title h2 {
