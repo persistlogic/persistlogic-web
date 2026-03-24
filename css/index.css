@@ -1140,7 +1140,7 @@ body {
     font-size: 11px !important;
   }
   
-  /* ===== HERO SECTION ===== */
+  /* ===== HERO SECTION - PHONE FINAL ===== */
   .hero-slider {
     min-height: 70vh !important;
     height: auto !important;
@@ -1150,10 +1150,11 @@ body {
     height: auto !important;
   }
   .slider-content {
-    padding: 60px 0 25px !important;
+    padding: 55px 0 20px !important;
     text-align: center !important;
   }
   
+  /* WEBSITE • APP • SOFTWARE - Top Margin */
   .slider-content h6 {
     display: block !important;
     visibility: visible !important;
@@ -1161,34 +1162,43 @@ body {
     font-size: 0.8rem !important;
     font-weight: 700 !important;
     letter-spacing: 5px !important;
-    margin-top: 30px !important;
-    margin-bottom: 20px !important;
+    margin-top: 35px !important;
+    margin-bottom: 18px !important;
     color: #20c997 !important;
     text-transform: uppercase !important;
     white-space: nowrap !important;
   }
   
+  /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 3rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 18px !important;
     color: white !important;
   }
   
+  /* We build powerful... - Font Size Same */
   .slider-content .lead {
-    font-size: 1rem !important;
-    margin-bottom: 25px !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 22px !important;
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.85) !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
+  /* Buttons - Bottom with Arrows */
   .hero-buttons {
+    display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 15px !important;
-    margin-bottom: 10px !important;
+    align-items: center !important;
     gap: 18px !important;
+    margin-top: 8px !important;
+    margin-bottom: 5px !important;
   }
+  
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
     padding: 10px 24px !important;
@@ -1198,33 +1208,56 @@ body {
     max-width: 140px !important;
   }
   
+  /* Arrow Buttons - Corners (Center Level with Buttons) */
   .slider-arrow {
+    position: absolute !important;
     top: auto !important;
-    bottom: 50px !important;
+    bottom: 52px !important;
     transform: translateY(0) !important;
-    width: 40px !important;
-    height: 40px !important;
+    width: 42px !important;
+    height: 42px !important;
     font-size: 1rem !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transition: all 0.3s !important;
+    z-index: 10 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
+  
   .slider-arrow.prev {
-    left: 15px !important;
+    left: 12px !important;
     right: auto !important;
   }
+  
   .slider-arrow.next {
-    right: 15px !important;
+    right: 12px !important;
     left: auto !important;
   }
   
+  .slider-arrow:hover {
+    background: #20c997 !important;
+    border-color: #20c997 !important;
+    transform: scale(1.05) !important;
+  }
+  
+  /* 3 Dots */
   .slider-dots {
     bottom: 12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
+    position: absolute !important;
   }
   .slider-dots .dot {
     width: 9px !important;
     height: 9px !important;
   }
   
+  /* Footer Social Icons - Center */
   .footer .col-lg-4,
   .footer .col-lg-2,
   .footer .col-lg-3 {
@@ -1282,7 +1315,7 @@ body {
     height: 30px !important;
   }
   
-  /* ===== HERO SECTION - SMALL PHONE (FIXED) ===== */
+  /* ===== HERO SECTION - SMALL PHONE ===== */
   .hero-slider {
     min-height: 65vh !important;
     height: auto !important;
@@ -1292,42 +1325,40 @@ body {
     height: auto !important;
   }
   .slider-content {
-    padding: 50px 0 20px !important;
+    padding: 48px 0 18px !important;
     text-align: center !important;
   }
   
-  /* WEBSITE • APP • SOFTWARE - Ek Line Mein */
+  /* WEBSITE • APP • SOFTWARE */
   .slider-content h6 {
     font-size: 0.7rem !important;
-    letter-spacing: 3px !important;
-    white-space: nowrap !important;
-    margin-top: 25px !important;
-    margin-bottom: 18px !important;
-    color: #20c997 !important;
+    letter-spacing: 4px !important;
+    margin-top: 30px !important;
+    margin-bottom: 15px !important;
   }
   
   /* Where Logic Meets Creativity */
   .slider-content h1 {
     font-size: 2.6rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 15px !important;
   }
   
-  /* We build powerful... - Font Size Kam */
+  /* We build powerful... - Font Size Same */
   .slider-content .lead {
     font-size: 0.85rem !important;
-    margin-bottom: 20px !important;
-    line-height: 1.4 !important;
+    margin-bottom: 18px !important;
+    line-height: 1.45 !important;
+    max-width: 95% !important;
   }
   
   /* Buttons */
   .hero-buttons {
-    flex-direction: row !important;
-    justify-content: center !important;
-    margin-top: 12px !important;
-    margin-bottom: 5px !important;
     gap: 15px !important;
+    margin-top: 6px !important;
+    margin-bottom: 4px !important;
   }
+  
   .hero-buttons .btn-gradient,
   .hero-buttons .btn-outline-light {
     padding: 8px 18px !important;
@@ -1339,16 +1370,18 @@ body {
   
   /* Arrow Buttons */
   .slider-arrow {
-    width: 34px !important;
-    height: 34px !important;
+    width: 36px !important;
+    height: 36px !important;
     font-size: 0.85rem !important;
-    bottom: 45px !important;
+    bottom: 46px !important;
   }
+  
   .slider-arrow.prev {
-    left: 12px !important;
+    left: 10px !important;
   }
+  
   .slider-arrow.next {
-    right: 12px !important;
+    right: 10px !important;
   }
   
   /* 3 Dots */
