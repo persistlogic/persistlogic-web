@@ -1142,11 +1142,11 @@ body {
   
   /* ===== HERO SECTION - PHONE (SAME AS LAPTOP LAYOUT) ===== */
   .hero-slider {
-    min-height: 58vh !important;
+    min-height: 45vh !important;
     height: auto !important;
   }
   .slider-container {
-    min-height: 58vh !important;
+    min-height: 45vh !important;
     height: auto !important;
   }
   .slider-content {
