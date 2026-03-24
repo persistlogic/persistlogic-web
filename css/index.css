@@ -1418,3 +1418,81 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
+
+/* ===== BUTTON FIX - SAME SIZE FOR BOTH BUTTONS ON ALL SCREENS ===== */
+
+/* Force same styles for both buttons */
+.hero-buttons .btn-gradient,
+.hero-buttons .btn-outline-light {
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+  border: none !important;
+}
+
+/* Get Started Button */
+.hero-buttons .btn-gradient {
+  background: linear-gradient(135deg, #20c997, #0a2540) !important;
+  color: white !important;
+  box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3) !important;
+}
+
+.hero-buttons .btn-gradient:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 30px -10px #20c997 !important;
+  background: linear-gradient(135deg, #1eb887, #0a1f35) !important;
+  color: white !important;
+}
+
+/* View Work Button - Same as Get Started */
+.hero-buttons .btn-outline-light {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(5px) !important;
+  box-shadow: none !important;
+}
+
+.hero-buttons .btn-outline-light:hover {
+  background: white !important;
+  color: #20c997 !important;
+  border-color: white !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 30px -10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Desktop/Laptop (992px and above) */
+@media (min-width: 992px) {
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    padding: 14px 36px !important;
+    font-size: 18px !important;
+    min-width: 160px !important;
+  }
+}
+
+/* Tablet (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+    min-width: 140px !important;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    padding: 8px 20px !important;
+    font-size: 13px !important;
+    min-width: 115px !important;
+  }
+}
