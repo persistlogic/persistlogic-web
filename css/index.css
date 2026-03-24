@@ -1428,3 +1428,68 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
+
+
+
+
+/* ===== BUTTON DESIGN - SAME FOR BOTH BUTTONS ===== */
+
+/* Base Button Styles - Same for Both */
+.hero-buttons .btn-gradient,
+.hero-buttons .btn-outline-light {
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+}
+
+/* Get Started Button - Green Gradient */
+.hero-buttons .btn-gradient {
+  background: linear-gradient(135deg, #20c997, #0a2540) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3) !important;
+  padding: 12px 32px !important;
+  font-size: 16px !important;
+}
+
+.hero-buttons .btn-gradient:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 30px -10px #20c997 !important;
+  background: linear-gradient(135deg, #1eb887, #0a1f35) !important;
+  color: white !important;
+}
+
+/* View Work Button - Same Size & Style as Get Started */
+.hero-buttons .btn-outline-light {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(5px) !important;
+  padding: 12px 32px !important;
+  font-size: 16px !important;
+  box-shadow: none !important;
+}
+
+.hero-buttons .btn-outline-light:hover {
+  background: white !important;
+  color: #20c997 !important;
+  border-color: white !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 30px -10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Desktop Specific (991px and above) */
+@media (min-width: 992px) {
+  .hero-buttons .btn-gradient,
+  .hero-buttons .btn-outline-light {
+    padding: 14px 36px !important;
+    font-size: 18px !important;
+  }
+}
