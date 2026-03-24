@@ -1231,13 +1231,13 @@ body {
   .slider-arrow.prev {
     left: 15px !important;
     right: auto !important;
-    margin-top: 182px;
+    margin-top: 54px;
   }
   
   .slider-arrow.next {
     right: 15px !important;
     left: auto !important;
-    margin-top: 51px;
+    margin-top: 54px;
   }
   
   .slider-arrow:hover {
@@ -1256,7 +1256,7 @@ body {
   .slider-dots .dot {
     width: 9px !important;
     height: 9px !important;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   
   /* Footer Social Icons - Center */
