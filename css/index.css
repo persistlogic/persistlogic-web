@@ -1256,7 +1256,7 @@ body {
   .slider-dots .dot {
     width: 9px !important;
     height: 9px !important;
-    margin-bottom: 80px;
+  
   }
   
   /* Footer Social Icons - Center */
@@ -1345,7 +1345,7 @@ body {
   }
   
   .slider-content .lead {
-    font-size: 0.9rem !important;
+    font-size: 1.8rem !important;
     margin-bottom: 22px !important;
     line-height: 1.45 !important;
   }
