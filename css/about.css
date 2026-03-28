@@ -1071,16 +1071,16 @@ body {
   .hero-title {
     font-size: 2.2rem !important;
     margin-top: 0 !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
   }
   
   .hero-content .section-subtitle {
     margin-top: 0 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 50px !important;
   }
   
   .hero-content .section-description {
-    margin-bottom: 25px !important;
+    margin-bottom: 30px !important;
   }
   
   /* 3 Cards - Bottom Par */
@@ -1109,7 +1109,7 @@ body {
   
   .story-content .section-subtitle {
     display: inline-block;
-    margin-top: 30px !important;
+    margin-top: 30px;
   }
   
   .story-content .section-title {
@@ -1250,6 +1250,8 @@ body {
   
   .navbar-logo {
     height: 30px !important;
+     width: auto !important;
+  max-height: 50px !important;
   }
   
   /* Hero Section - Small Phone */
@@ -1258,8 +1260,8 @@ body {
   }
   
   .stat-card-round-light {
-    width: 75px !important;
-    height: 75px !important;
+    width: 90px !important;
+    height: 90px !important;
   }
   
   .stat-card-round-light h3 {
