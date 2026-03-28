@@ -1523,6 +1523,7 @@ html {
   }
   
   /* Menu - LEFT SE SLIDE OPEN */
+ @media (max-width: 991px) {
   .navbar-collapse {
     display: none !important;
     position: fixed !important;
@@ -1534,9 +1535,10 @@ html {
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1) !important;
     transition: left 0.3s ease !important;
     z-index: 1050 !important;
-    padding: 80px 20px 30px !important;
+    padding: 20px 20px 30px !important;  /* 80px se 20px kar diya */
     overflow-y: auto !important;
   }
+}
   
   .navbar-collapse.show {
     display: block !important;

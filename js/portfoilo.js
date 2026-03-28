@@ -127,37 +127,3 @@ document.addEventListener('DOMContentLoaded', function() {
   
   console.log('Portfolio JS loaded successfully!');
 });
-// ===== HAMBURGER MENU FUNCTIONALITY WITH CROSS EFFECT =====
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const navbarCollapse = document.getElementById('navbarNav');
-const menuOverlay = document.getElementById('menuOverlay');
-
-function closeMenu() {
-  if (navbarCollapse) navbarCollapse.classList.remove('show');
-  if (menuOverlay) menuOverlay.classList.remove('show');
-  if (hamburgerBtn) hamburgerBtn.classList.remove('collapsed');  // Cross se ☰
-}
-
-function openMenu() {
-  if (navbarCollapse) navbarCollapse.classList.add('show');
-  if (menuOverlay) menuOverlay.classList.add('show');
-  if (hamburgerBtn) hamburgerBtn.classList.add('collapsed');  // ☰ se Cross
-}
-
-if (hamburgerBtn) {
-  hamburgerBtn.addEventListener('click', function() {
-    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  });
-}
-
-if (menuOverlay) {
-  menuOverlay.addEventListener('click', closeMenu);
-}
-
-document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-  link.addEventListener('click', closeMenu);
-});
