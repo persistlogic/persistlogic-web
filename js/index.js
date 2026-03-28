@@ -198,20 +198,21 @@ window.addEventListener('load', () => {
 
 
 
-// ===== HAMBURGER MENU FUNCTIONALITY - SAME FOR ALL PAGES =====
+// ===== HAMBURGER MENU FUNCTIONALITY WITH CROSS EFFECT =====
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navbarCollapse = document.getElementById('navbarNav');
 const menuOverlay = document.getElementById('menuOverlay');
-const menuCloseBtn = document.getElementById('menuCloseBtn');
 
 function closeMenu() {
   if (navbarCollapse) navbarCollapse.classList.remove('show');
   if (menuOverlay) menuOverlay.classList.remove('show');
+  if (hamburgerBtn) hamburgerBtn.classList.remove('collapsed');  // Cross se ☰
 }
 
 function openMenu() {
   if (navbarCollapse) navbarCollapse.classList.add('show');
   if (menuOverlay) menuOverlay.classList.add('show');
+  if (hamburgerBtn) hamburgerBtn.classList.add('collapsed');  // ☰ se Cross
 }
 
 if (hamburgerBtn) {
@@ -222,10 +223,6 @@ if (hamburgerBtn) {
       openMenu();
     }
   });
-}
-
-if (menuCloseBtn) {
-  menuCloseBtn.addEventListener('click', closeMenu);
 }
 
 if (menuOverlay) {

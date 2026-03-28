@@ -706,7 +706,7 @@ body {
 
 
 
-/* ===== HAMBURGER MENU STYLES ===== */
+/* ===== HAMBURGER BUTTON WITH CROSS EFFECT ===== */
 
 .navbar-toggler {
   border: none !important;
@@ -716,6 +716,7 @@ body {
   margin-left: auto !important;
   display: block !important;
   cursor: pointer !important;
+  transition: all 0.3s ease !important;
 }
 
 .navbar-toggler:focus {
@@ -731,6 +732,7 @@ body {
   background: #0a0f1e !important;
   border-radius: 2px !important;
   display: block !important;
+  transition: all 0.3s ease !important;
 }
 
 .navbar-toggler-icon::before,
@@ -741,6 +743,7 @@ body {
   height: 2px !important;
   background: #0a0f1e !important;
   border-radius: 2px !important;
+  transition: all 0.3s ease !important;
   left: 0 !important;
 }
 
@@ -750,6 +753,49 @@ body {
 
 .navbar-toggler-icon::after {
   bottom: -8px !important;
+}
+
+/* Jab menu CLOSED ho - ☰ Three Lines */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background: #0a0f1e !important;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  top: -8px !important;
+  transform: none !important;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  bottom: -8px !important;
+  transform: none !important;
+}
+
+/* Jab menu OPEN ho - ✕ Cross */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background: transparent !important;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+  transform: rotate(45deg) !important;
+  top: 0 !important;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+  transform: rotate(-45deg) !important;
+  bottom: 0 !important;
+}
+
+/* Menu Logo - Top Center */
+.menu-logo {
+  text-align: center !important;
+  margin-bottom: 30px !important;
+  padding-bottom: 15px !important;
+  border-bottom: 2px solid rgba(32, 201, 151, 0.3) !important;
+}
+
+.menu-logo img {
+  height: 50px !important;
+  width: auto !important;
 }
 
 /* Mobile Quote Button */
@@ -775,32 +821,6 @@ body {
 
 .menu-overlay.show {
   display: block;
-}
-
-/* Close Button inside Menu - Top Right Corner */
-.menu-close-btn {
-  position: absolute !important;
-  top: 20px !important;
-  right: 20px !important;
-  background: transparent !important;
-  border: none !important;
-  font-size: 28px !important;
-  color: #0a0f1e !important;
-  cursor: pointer !important;
-  z-index: 1060 !important;
-  padding: 5px !important;
-  width: 40px !important;
-  height: 40px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-  transition: all 0.3s ease !important;
-}
-
-.menu-close-btn:hover {
-  background: rgba(0, 0, 0, 0.1) !important;
-  transform: rotate(90deg) !important;
 }
 
 /* ===== MOBILE VIEW - LEFT SIDE SLIDE ===== */
@@ -832,13 +852,18 @@ body {
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1) !important;
     transition: left 0.3s ease !important;
     z-index: 1050 !important;
-    padding: 60px 20px 30px !important;
+    padding: 80px 20px 30px !important;
     overflow-y: auto !important;
   }
   
   .navbar-collapse.show {
     display: block !important;
     left: 0 !important;
+  }
+  
+  /* Show logo inside menu on mobile */
+  .menu-logo {
+    display: block !important;
   }
   
   .navbar-nav {
@@ -868,11 +893,6 @@ body {
   
   .navbar-modern .nav-link::before {
     display: none !important;
-  }
-  
-  /* Show close button only when menu is open */
-  .menu-close-btn {
-    display: flex !important;
   }
 }
 
@@ -939,7 +959,7 @@ body {
     display: none !important;
   }
   
-  .menu-close-btn {
+  .menu-logo {
     display: none !important;
   }
 }
