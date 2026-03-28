@@ -198,7 +198,7 @@ window.addEventListener('load', () => {
 
 
 
-// ===== HAMBURGER MENU FUNCTIONALITY =====
+// ===== HAMBURGER MENU FUNCTIONALITY - SAME FOR ALL PAGES =====
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navbarCollapse = document.getElementById('navbarNav');
 const menuOverlay = document.getElementById('menuOverlay');

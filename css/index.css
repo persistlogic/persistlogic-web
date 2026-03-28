@@ -1504,7 +1504,7 @@ body {
   }
 }
 
-/* ===== HAMBURGER MENU STYLES ===== */
+/* ===== HAMBURGER MENU STYLES - SAME FOR ALL PAGES ===== */
 
 .navbar-toggler {
   border: none !important;
@@ -1674,6 +1674,7 @@ body {
   }
 }
 
+/* ===== DESKTOP VIEW (above 992px) ===== */
 @media (min-width: 992px) {
   .navbar-toggler {
     display: none !important;
