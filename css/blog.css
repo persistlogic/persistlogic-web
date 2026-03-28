@@ -991,6 +991,7 @@ body {
   }
   .navbar-logo {
     height: 30px !important;
+    padding-left: 20px;
   }
   
   /* ===== BANNER SECTION - SMALL PHONE (Heading Top Se Margin) ===== */
