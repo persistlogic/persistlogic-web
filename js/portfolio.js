@@ -1,3 +1,43 @@
+// ===== HAMBURGER MENU FUNCTIONALITY =====
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navbarCollapse = document.getElementById('navbarNav');
+const menuOverlay = document.getElementById('menuOverlay');
+const menuCloseBtn = document.getElementById('menuCloseBtn');
+
+function closeMenu() {
+  if (navbarCollapse) navbarCollapse.classList.remove('show');
+  if (menuOverlay) menuOverlay.classList.remove('show');
+}
+
+function openMenu() {
+  if (navbarCollapse) navbarCollapse.classList.add('show');
+  if (menuOverlay) menuOverlay.classList.add('show');
+}
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', function() {
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+}
+
+if (menuCloseBtn) {
+  menuCloseBtn.addEventListener('click', closeMenu);
+}
+
+if (menuOverlay) {
+  menuOverlay.addEventListener('click', closeMenu);
+}
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
