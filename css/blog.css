@@ -911,7 +911,7 @@ body {
 @media (max-width: 768px) {
   .navbar-modern .container {
     overflow-x: auto !important;
-    justify-content: flex-start !important;
+    justify-content: space-between !important;  /* ← CHANGE */
     gap: 5px !important;
     padding: 0 10px !important;
   }
@@ -933,10 +933,12 @@ body {
     padding: 5px 10px !important;
     font-size: 11px !important;
   }
+  @media (max-width: 768px) {
   .navbar-logo {
     height: 40px !important;
+    /* padding-left: 20px;  REMOVE OR COMMENT */
   }
-  
+}
   /* ===== BANNER SECTION - FIX (Heading Top Se Margin) ===== */
   .page-banner {
     min-height: 28vh !important;
@@ -989,9 +991,9 @@ body {
     padding: 4px 8px !important;
     font-size: 10px !important;
   }
-  .navbar-logo {
+   .navbar-logo {
     height: 30px !important;
-    padding-left: 20px;
+    /* padding-left: 20px;  ← COMMENT OR DELETE */
   }
   
   /* ===== BANNER SECTION - SMALL PHONE (Heading Top Se Margin) ===== */

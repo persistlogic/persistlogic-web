@@ -1142,6 +1142,12 @@ body {
     padding: 5px 10px !important;
     font-size: 11px !important;
   }
+  @media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px !important;  /* Blog ke equal karo */
+    /* padding-left: 20px; - Agar chahiye toh add karo */
+  }
+}
   
   /* ===== HERO SECTION - PHONE (SAME AS LAPTOP LAYOUT) ===== */
   .hero-slider {
