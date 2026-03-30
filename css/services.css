@@ -594,6 +594,7 @@ body {
     justify-content: flex-start !important;
     gap: 5px !important;
     padding: 0 10px !important;
+    margin: 0 10px !important;
   }
   
   .navbar-modern .nav-link {
