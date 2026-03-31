@@ -914,6 +914,7 @@ body {
     justify-content: space-between !important;  /* ← CHANGE */
     gap: 5px !important;
     padding: 0 10px !important;
+    margin: 0 10px !important;
   }
   .navbar-brand {
     margin-right: 10px !important;
